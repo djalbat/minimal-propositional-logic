@@ -1,10 +1,6 @@
-# Propositional Logic
+# Minimal Propositional Logic
 
-Propositional Logic for the [Occam](http://djalbat.com/occam) proof assistant.
-
-There are in fact three, nested, implementations, namely minimal, intuitionistic and classical. As well as the standard rules given below there are also many derived rules. Check the source for details.
-
-## Minimal Propositional Logic
+Minimal propositional logic for the [Occam](http://djalbat.com/occam) proof assistant.
 
 \[
 \frac{[P]\;...\;Q}{P\Rightarrow{Q}}\quad\small\text{[ImplicationIntroduction,ConditionalProof]}
@@ -45,23 +41,6 @@ There are in fact three, nested, implementations, namely minimal, intuitionistic
 \]
 \[
 \frac{P\iff{Q}}{Q\Rightarrow{P}}\quad\small\text{[BiconditionalRightElimination]}
-\]
-
-## Intuitionistic Propositional Logic
-
-The implementation encompasses all of the above rules, plus the following:
-
-\[
-\frac{\neg{P}}{
-P\Rightarrow{Q}}\quad\small\text{[PrincipleOfExplosion,NegationElimination,ExFalsoQuodlibet]}
-\]
-
-## Classical Propositional Logic
-
-The implementation encompasses all of the above rules, plus the following:
-
-\[
-\frac{\;}{P\lor\neg{P}}\quad\small\text{[LawOfTheExludedMiddle]}
 \]
 
 ## Resources
