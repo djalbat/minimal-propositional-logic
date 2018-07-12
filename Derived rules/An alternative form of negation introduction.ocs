@@ -1,0 +1,12 @@
+Rule (NegationIntroductionAlternativeForm)
+  Premise
+    P=>Q∧¬Q
+  Conclusion
+    ¬P
+  Proof
+    P=>Q by ConjunctionLeftEliminationWithImplication
+    P=>¬Q by ConjunctionLeftEliminationWithImplication
+  Therefore
+    ¬P by NegationIntroduction
+    
+

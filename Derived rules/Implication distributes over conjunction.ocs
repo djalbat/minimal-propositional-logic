@@ -1,0 +1,44 @@
+Rule (ConjunctionLeftEliminationWithImplication)
+  Premise
+    P=>Q∧¬Q
+  Conclusion
+    P=>Q
+  Proof
+    Suppose
+      P
+    Hence
+      Q∧¬Q
+      Q by ConjunctionElimination
+  Therefore
+    P=>Q
+
+Rule (ConjunctionRightEliminationWithImplication)
+  Premise
+    P=>Q∧¬Q
+  Conclusion
+    P=>¬Q
+  Proof
+    Suppose
+      P
+    Hence
+      Q∧¬Q
+      ¬Q by ConjunctionElimination
+  Therefore
+    P=>¬Q
+
+Rule (ConjunctionIntroductionWithImplication)
+  Premises
+    P=>Q
+    P=>¬Q
+  Conclusion
+    P=>Q∧¬Q
+  Proof
+    Suppose
+      P
+    Hence
+      Q by ModusPonens
+      ¬Q by ModusPonens
+      Q∧¬Q by ConjunctionIntroduction
+  Therefore
+    P=>Q∧¬Q
+

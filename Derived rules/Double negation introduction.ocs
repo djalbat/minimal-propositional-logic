@@ -1,0 +1,14 @@
+Rule (DoubleNegationIntroduction)
+  Premise
+    P
+  Conclusion
+    ¬¬P
+  Proof
+    Suppose
+      ¬P
+    Hence
+      P∧¬P
+    ¬P=>P∧¬P
+  Therefore
+    ¬¬P by NegationIntroduction
+

@@ -1,0 +1,18 @@
+Rule (ConjunctionIntroduction)
+  Premises
+    P
+    Q
+  Conclusion
+    P∧Q
+
+Rule (ConjunctionLeftElimination)
+  Premise
+    P∧Q
+  Conclusion
+    P
+
+Rule (ConjunctionRightElimination)
+  Premise
+    P∧Q
+  Conclusion
+    Q

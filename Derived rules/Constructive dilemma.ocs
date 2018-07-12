@@ -1,0 +1,39 @@
+Rule (ConstructiveDilemma)
+  Premises
+    P=>R
+    Q=>S
+    P∨Q
+  Conclusion
+    R∨S
+  Proof
+    Suppose
+      P=>R
+    Then
+      Suppose
+        P
+      Then
+        P=>R
+        R by ModusPonens
+      Hence
+        R∨S
+    Hence
+      P=>R∨S
+    (P=>R)=>(P=>R∨S)
+    P=>R∨S by ModusPonens
+    Suppose
+      Q=>S
+    Then
+      Suppose
+        Q
+      Then
+        Q=>S
+        S by ModusPonens
+      Hence
+        R∨S
+    Hence
+      Q=>R∨S
+    (Q=>S)=>(Q=>R∨S)
+    Q=>R∨S by ModusPonens
+  Therefore
+    R∨S by DisjunctionElimination
+

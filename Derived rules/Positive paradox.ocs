@@ -1,0 +1,15 @@
+Rule (PositiveParadox,Simp)
+  Conclusion
+    P=>(Q=>P)
+  Proof
+    Suppose
+      P
+    Then
+      Suppose
+        Q
+      Hence
+        P
+    Hence
+      Q=>P
+  Therefore
+    P=>(Q=>P)

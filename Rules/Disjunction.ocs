@@ -1,0 +1,19 @@
+Rule (DisjunctionLeftIntroduction,LeftAddtion)
+  Premise
+    P
+  Conclusion
+    P∨Q
+
+Rule (DisjunctionRightIntroduction,RightAddition)
+  Premise
+    Q
+  Conclusion
+    P∨Q
+
+Rule (DisjunctionElimination,ProofByCases)
+  Premises
+    P=>R
+    Q=>R
+    P∨Q
+  Conclusion
+    R

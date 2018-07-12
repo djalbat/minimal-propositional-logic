@@ -1,0 +1,18 @@
+Rule (BiconditionalIntroduction)
+  Premises    
+    P=>Q
+    Q=>P
+  Conclusion
+    P iff Q
+
+Rule (BiconditionalLeftElimination)
+  Premise
+    P iff Q
+  Conclusion
+    P=>Q
+
+Rule (BiconditionalRightElimination)
+  Premise
+    P iff Q
+  Conclusion
+    Q=>P

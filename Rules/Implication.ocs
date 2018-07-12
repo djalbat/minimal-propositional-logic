@@ -1,0 +1,12 @@
+Rule (ImplicationIntroduction,ConditionalProof)
+  Premise
+    [P]...Q
+  Conclusion
+    P=>Q
+
+Rule (ModusPonens,ImplicationElimination,RuleOfDetachment)
+  Premises
+    P=>Q
+    P 
+  Conclusion
+    Q

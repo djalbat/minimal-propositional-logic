@@ -1,0 +1,6 @@
+Rule (NegationIntroduction,ProofByNegation)
+  Premises
+    P=>Q
+    P=>¬Q
+  Conclusion
+    ¬P
