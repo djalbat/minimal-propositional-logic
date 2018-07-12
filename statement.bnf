@@ -1,0 +1,32 @@
+
+
+     negation                             ::=   "¬"<NO_WHITESPACE>statement ;
+
+     conjunction                          ::=   statement "∧" statement ;
+
+     disjunction                          ::=   statement "∨" statement ;
+
+     implication                          ::=   statement ( "<=" | "=>" ) statement ;
+
+     biconditional                        ::=   statement ( "iff" | "<=>" ) statement ;
+
+     materialConditional                  ::=   statement "->" statement ;
+
+     parenthesisedStatement               ::=   "(" statement ")" ;
+
+
+     statement                            ::=   negation
+
+                                            |   conjunction
+
+                                            |   disjunction
+
+                                            |   implication
+
+                                            |   biconditional
+
+                                            |   materialConditional
+
+                                            |   parenthesisedStatement
+
+                                            ;

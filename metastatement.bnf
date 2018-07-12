@@ -1,0 +1,32 @@
+
+
+     metaNegation                         ::=   "¬"<NO_WHITESPACE>metastatement ;
+
+     metaConjunction                      ::=   metastatement "∧" metastatement ;
+
+     metaDisjunction                      ::=   metastatement "∨" metastatement ;
+
+     metaImplication                      ::=   metastatement ( "<=" | "=>" ) metastatement ;
+
+     metaBiconditional                    ::=   metastatement ( "iff" | "<=>" ) metastatement ;
+
+     metaMaterialConditional              ::=   metastatement "->" metastatement ;
+
+     parenthesisedMetastatement           ::=   "(" metastatement ")" ;
+
+
+     metastatement                        ::=   metaNegation
+
+                                            |   metaConjunction
+
+                                            |   metaDisjunction
+
+                                            |   metaImplication
+
+                                            |   metaBiconditional
+
+                                            |   metaMaterialConditional
+
+                                            |   parenthesisedMetastatement
+
+                                            ;
