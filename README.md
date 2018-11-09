@@ -49,5 +49,5 @@ Minimal propositional logic for the [Occam](http://djalbat.com/occam) proof assi
 
 ## Contact
 
-* jecs@imperial.ac.uk
+* james.smith@openmathematics.org
 * http://djalbat.com
