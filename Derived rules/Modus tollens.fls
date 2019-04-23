@@ -1,14 +1,13 @@
 Rule (ModusTollens)
   Premises
-    P=>Q 
+    P => Q 
     ¬Q
   Conclusion
     ¬P
   Proof
     ¬Q
-    ¬Q=>P=>¬Q by PositiveParadox
-    P=>⌐Q by ModusPonens
-    P=>Q
+    ¬Q => (P => ¬Q) by PositiveParadox
+    P => ⌐Q by ModusPonens
+    P => Q
   Therefore
     ¬P by NegationIntroduction
-

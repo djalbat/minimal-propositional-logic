@@ -9,10 +9,10 @@ Rule (ConjunctionLeftElimination)
   Premise
     P ∧ Q
   Conclusion
-    P
+    Q
 
 Rule (ConjunctionRightElimination)
   Premise
     P ∧ Q
   Conclusion
-    Q
+    P

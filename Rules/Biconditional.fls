@@ -1,7 +1,7 @@
 Rule (BiconditionalIntroduction)
   Premises    
     P => Q
-    Q => P
+    P <= Q
   Conclusion
     P iff Q
 
@@ -15,4 +15,8 @@ Rule (BiconditionalRightElimination)
   Premise
     P iff Q
   Conclusion
-    Q => P
+    P <= Q
+
+Rule (BiconditionalEquivalence)
+  Conclusion
+    (P iff Q) iff (P <=> Q)

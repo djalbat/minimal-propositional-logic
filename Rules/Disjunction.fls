@@ -1,10 +1,10 @@
-Rule (DisjunctionLeftIntroduction,LeftAddtion)
+Rule (DisjunctionRightIntroduction,RightAddtion)
   Premise
     P
   Conclusion
     P ∨ Q
 
-Rule (DisjunctionRightIntroduction,RightAddition)
+Rule (DisjunctionLeftIntroduction,LeftAddition)
   Premise
     Q
   Conclusion

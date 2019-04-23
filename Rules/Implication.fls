@@ -10,3 +10,7 @@ Rule (ModusPonens,ImplicationElimination,RuleOfDetachment)
     P 
   Conclusion
     Q
+
+Rule (ImpliciationEquivalence)
+  Conclusion
+    (A => B) iff (A <= B)
