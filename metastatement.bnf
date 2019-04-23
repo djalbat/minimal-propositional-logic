@@ -1,32 +1,33 @@
 
+     negatedMetastatement                      ::=   "¬"<NO_WHITESPACE>metastatement ;
 
-     metaNegation                         ::=   "¬"<NO_WHITESPACE>metastatement ;
+     parenthesisedMetastatement                ::=   "(" metastatement ")" ;
 
-     metaConjunction                      ::=   metastatement "∧" metastatement ;
+     conjunctionOfMetastatements               ::=   metastatement "∧" metastatement ;
 
-     metaDisjunction                      ::=   metastatement "∨" metastatement ;
+     disjunctionOfMetastatements               ::=   metastatement "∨" metastatement ;
 
-     metaImplication                      ::=   metastatement ( "<=" | "=>" ) metastatement ;
+     implicationBetweenMetastatements          ::=   metastatement ( "<=" | "=>" ) metastatement ;
 
-     metaBiconditional                    ::=   metastatement ( "iff" | "<=>" ) metastatement ;
+     biconditionalBetweenMetastatements        ::=   metastatement ( "iff" | "<=>" ) metastatement ;
 
-     metaMaterialConditional              ::=   metastatement "->" metastatement ;
-
-     parenthesisedMetastatement           ::=   "(" metastatement ")" ;
+     materialConditionalBetweenMetastatements  ::=   metastatement "->" metastatement ;
 
 
-     metastatement                        ::=   metaNegation
+     metastatement                             ::=   negatedMetastatement
 
-                                            |   metaConjunction
+                                                 |   parenthesisedMetastatement
+    
+                                                 |   conjunctionOfMetastatements
+     
+                                                 |   disjunctionOfMetastatements
+     
+                                                 |   implicationBetweenMetastatements
+     
+                                                 |   biconditionalBetweenMetastatements
+     
+                                                 |   materialConditionalBetweenMetastatements
+     
+                                                 ;
 
-                                            |   metaDisjunction
-
-                                            |   metaImplication
-
-                                            |   metaBiconditional
-
-                                            |   metaMaterialConditional
-
-                                            |   parenthesisedMetastatement
-
-                                            ;
+ 

@@ -1,32 +1,32 @@
 
 
-     negation                             ::=   "¬"<NO_WHITESPACE>statement ;
+     negatedStatement                      ::=   "¬"<NO_WHITESPACE>statement ;
 
-     conjunction                          ::=   statement "∧" statement ;
+     parenthesisedStatement                ::=   "(" statement ")" ;
 
-     disjunction                          ::=   statement "∨" statement ;
+     conjunctionOfStatements               ::=   statement "∧" statement ;
 
-     implication                          ::=   statement ( "<=" | "=>" ) statement ;
+     disjunctionOfStatements               ::=   statement "∨" statement ;
 
-     biconditional                        ::=   statement ( "iff" | "<=>" ) statement ;
+     implicationBetweenStatements          ::=   statement ( "<=" | "=>" ) statement ;
 
-     materialConditional                  ::=   statement "->" statement ;
+     biconditionalBetweenStatements        ::=   statement ( "iff" | "<=>" ) statement ;
 
-     parenthesisedStatement               ::=   "(" statement ")" ;
+     materialConditionalBetweenStatements  ::=   statement "->" statement ;
 
 
-     statement                            ::=   negation
+     statement                             ::=   negatedStatement
 
-                                            |   conjunction
+                                             |   parenthesisedStatement
 
-                                            |   disjunction
-
-                                            |   implication
-
-                                            |   biconditional
-
-                                            |   materialConditional
-
-                                            |   parenthesisedStatement
-
-                                            ;
+                                             |   conjunctionOfStatements
+ 
+                                             |   disjunctionOfStatements
+ 
+                                             |   implicationBetweenStatements
+ 
+                                             |   biconditionalBetweenStatements
+ 
+                                             |   materialConditionalBetweenStatements
+ 
+                                             ;

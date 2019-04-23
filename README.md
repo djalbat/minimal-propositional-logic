@@ -1,6 +1,6 @@
 # Minimal Propositional Logic
 
-Minimal propositional logic for the [Occam](http://djalbat.com/occam) proof assistant.
+Minimal propositional logic for the [Occam](http://occam.science) proof assistant.
 
 \[
 \frac{[P]\;...\;Q}{P\Rightarrow{Q}}\quad\small\text{[ImplicationIntroduction,ConditionalProof]}
