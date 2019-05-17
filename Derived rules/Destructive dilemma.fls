@@ -18,7 +18,7 @@ Rule (DestructiveDilemma)
     Hence
       ¬R => (¬P ∨ ¬Q)
     (P => R) => (¬R => (¬P ∨ ¬Q))
-    ¬R=>¬P∨¬Q by ModusPonens
+    ¬R => (¬P ∨ ¬Q) by ModusPonens
     Suppose
       Q => S
     Then
