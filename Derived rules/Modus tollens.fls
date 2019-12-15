@@ -7,7 +7,7 @@ Rule (ModusTollens)
   Proof
     ¬Q
     ¬Q => (P => ¬Q) by PositiveParadox
-    P => ⌐Q by ModusPonens
+    P => ¬Q by ModusPonens
     P => Q
   Therefore
     ¬P by NegationIntroduction
