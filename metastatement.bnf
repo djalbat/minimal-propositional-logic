@@ -1,23 +1,23 @@
 
-        negatedMetastatement   ::=   "¬"<NO_WHITESPACE>metastatement ;
+     negatedMetastatement      ::=   "¬"<NO_WHITESPACE>metastatement ;
 
-             metaConjunction   ::=   metastatement "∧" metastatement ;
+     metaConjunction           ::=   metastatement "∧" metastatement ;
 
-             metaDisjunction   ::=   metastatement "∨" metastatement ;
+     metaDisjunction           ::=   metastatement "∨" metastatement ;
 
-             metaImplication   ::=   metastatement "=>" metastatement 
+     metaImplication           ::=   metastatement "=>" metastatement 
 
                                  |   statement "=>" metastatement
 
                                  ;
 
-           metaBiconditional   ::=   metastatement ( "iff" | "<=>" ) metastatement ;
+     metaBiconditional         ::=   metastatement ( "iff" | "<=>" ) metastatement ;
 
      metaMaterialConditional   ::=   metastatement "->" metastatement ;
 
 
 
-               metastatement   ::=   negatedMetastatement
+     metastatement             ::=   negatedMetastatement
     
                                  |   metaConjunction
      

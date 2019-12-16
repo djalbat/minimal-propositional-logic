@@ -1,20 +1,20 @@
 
 
-        negatedStatement   ::=   "¬"<NO_WHITESPACE>statement ;
+     negatedStatement      ::=   "¬"<NO_WHITESPACE>statement ;
 
-             conjunction   ::=   statement "∧" statement ;
+     conjunction           ::=   statement "∧" statement ;
 
-             disjunction   ::=   statement "∨" statement ;
+     disjunction           ::=   statement "∨" statement ;
 
-             implication   ::=   statement "=>" statement ;
+     implication           ::=   statement "=>" statement ;
 
-           biconditional   ::=   statement ( "iff" | "<=>" ) statement ;
+     biconditional         ::=   statement ( "iff" | "<=>" ) statement ;
 
      materialConditional   ::=   statement "->" statement ;
 
 
 
-               statement   ::=   negatedStatement
+     statement             ::=   negatedStatement
 
                              |   conjunction
  
