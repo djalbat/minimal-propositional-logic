@@ -1,32 +1,29 @@
 
 
-     negatedStatement                      ::=   "¬"<NO_WHITESPACE>statement ;
+        negatedStatement   ::=   "¬"<NO_WHITESPACE>statement ;
 
-     parenthesisedStatement                ::=   "(" statement ")" ;
+             conjunction   ::=   statement "∧" statement ;
 
-     conjunctionOfStatements               ::=   statement "∧" statement ;
+             disjunction   ::=   statement "∨" statement ;
 
-     disjunctionOfStatements               ::=   statement "∨" statement ;
+             implication   ::=   statement "=>" statement ;
 
-     implicationBetweenStatements          ::=   statement ( "<=" | "=>" ) statement ;
+           biconditional   ::=   statement ( "iff" | "<=>" ) statement ;
 
-     biconditionalBetweenStatements        ::=   statement ( "iff" | "<=>" ) statement ;
-
-     materialConditionalBetweenStatements  ::=   statement "->" statement ;
+     materialConditional   ::=   statement "->" statement ;
 
 
-     statement                             ::=   negatedStatement
 
-                                             |   parenthesisedStatement
+               statement   ::=   negatedStatement
 
-                                             |   conjunctionOfStatements
+                             |   conjunction
  
-                                             |   disjunctionOfStatements
+                             |   disjunction
  
-                                             |   implicationBetweenStatements
+                             |   implication
  
-                                             |   biconditionalBetweenStatements
+                             |   biconditional
  
-                                             |   materialConditionalBetweenStatements
+                             |   materialConditional
  
-                                             ;
+                             ;

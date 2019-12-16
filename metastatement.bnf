@@ -1,33 +1,34 @@
 
-     negatedMetastatement                      ::=   "¬"<NO_WHITESPACE>metastatement ;
+        negatedMetastatement   ::=   "¬"<NO_WHITESPACE>metastatement ;
 
-     parenthesisedMetastatement                ::=   "(" metastatement ")" ;
+             metaConjunction   ::=   metastatement "∧" metastatement ;
 
-     conjunctionOfMetastatements               ::=   metastatement "∧" metastatement ;
+             metaDisjunction   ::=   metastatement "∨" metastatement ;
 
-     disjunctionOfMetastatements               ::=   metastatement "∨" metastatement ;
+             metaImplication   ::=   metastatement "=>" metastatement 
 
-     implicationBetweenMetastatements          ::=   metastatement ( "<=" | "=>" ) metastatement ;
+                                 |   statement "=>" metastatement
 
-     biconditionalBetweenMetastatements        ::=   metastatement ( "iff" | "<=>" ) metastatement ;
+                                 ;
 
-     materialConditionalBetweenMetastatements  ::=   metastatement "->" metastatement ;
+           metaBiconditional   ::=   metastatement ( "iff" | "<=>" ) metastatement ;
+
+     metaMaterialConditional   ::=   metastatement "->" metastatement ;
 
 
-     metastatement                             ::=   negatedMetastatement
 
-                                                 |   parenthesisedMetastatement
+               metastatement   ::=   negatedMetastatement
     
-                                                 |   conjunctionOfMetastatements
+                                 |   metaConjunction
      
-                                                 |   disjunctionOfMetastatements
+                                 |   metaDisjunction
      
-                                                 |   implicationBetweenMetastatements
+                                 |   metaImplication
      
-                                                 |   biconditionalBetweenMetastatements
+                                 |   metaBiconditional
      
-                                                 |   materialConditionalBetweenMetastatements
+                                 |   metaMaterialConditional
      
-                                                 ;
+                                 ;
 
  
