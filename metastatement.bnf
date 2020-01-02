@@ -5,7 +5,7 @@
 
      metaDisjunction              ::=   metastatement "∨" metastatement ;
 
-     metaImplication              ::=   ( statement | metastatement ) "=>" metastatement ;
+     metaImplication              ::=   metastatement "=>" metastatement | statement "=>" metastatement ;
 
      metaBiconditional            ::=   metastatement ( "iff" | "<=>" ) metastatement ;
 
