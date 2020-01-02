@@ -1,34 +1,37 @@
 
-     negatedMetastatement      ::=   "¬"<NO_WHITESPACE>metastatement ;
+     negatedMetastatement         ::=   "¬"<NO_WHITESPACE>metastatement ;
 
-     metaConjunction           ::=   metastatement "∧" metastatement ;
+     metaConjunction              ::=   metastatement "∧" metastatement ;
 
-     metaDisjunction           ::=   metastatement "∨" metastatement ;
+     metaDisjunction              ::=   metastatement "∨" metastatement ;
 
-     metaImplication           ::=   metastatement "=>" metastatement 
+     metaImplication              ::=   metastatement "=>" metastatement 
 
-                                 |   statement "=>" metastatement
+                                    |   statement "=>" metastatement
 
-                                 ;
+                                    ;
 
-     metaBiconditional         ::=   metastatement ( "iff" | "<=>" ) metastatement ;
+     metaBiconditional            ::=   metastatement ( "iff" | "<=>" ) metastatement ;
 
-     metaMaterialConditional   ::=   metastatement "->" metastatement ;
+     metaMaterialConditional      ::=   metastatement "->" metastatement ;
+
+     parenthesisedMetastatement   ::=   "(" metastatement ")" ;
 
 
-
-     metastatement             ::=   negatedMetastatement
+     metastatement                ::=   negatedMetastatement
     
-                                 |   metaConjunction
+                                    |   metaConjunction
      
-                                 |   metaDisjunction
+                                    |   metaDisjunction
      
-                                 |   metaImplication
+                                    |   metaImplication
      
-                                 |   metaBiconditional
+                                    |   metaBiconditional
      
-                                 |   metaMaterialConditional
+                                    |   metaMaterialConditional
      
-                                 ;
+                                    |   parenthesisedMetastatement
+     
+                                    ;
 
  
