@@ -15,7 +15,7 @@ Rule (BiconditionalRightElimination)
   Premise
     P iff Q
   Conclusion
-    P <= Q
+    Q => P
 
 Rule (BiconditionalEquivalence)
   Conclusion
