@@ -1,5 +1,4 @@
 
-
      negatedStatement         ::=   "¬"<NO_WHITESPACE>statement ;
 
      conjunction              ::=   statement "∧" statement ;
@@ -13,7 +12,6 @@
      materialConditional      ::=   statement "->" statement ;
 
      parenthesisedStatement   ::=   "(" statement ")" ;
-
 
 
      statement                ::=   negatedStatement

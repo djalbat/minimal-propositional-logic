@@ -1,7 +1,7 @@
 Rule (BiconditionalIntroduction)
   Premises    
     P => Q
-    P <= Q
+    Q => P
   Conclusion
     P iff Q
 
