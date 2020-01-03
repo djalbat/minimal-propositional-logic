@@ -11,8 +11,6 @@
  
      materialConditional      ::=   statement "->" statement ;
 
-     parenthesisedStatement   ::=   "(" statement ")" ;
-
 
      statement                ::=   negatedStatement
 
@@ -25,7 +23,5 @@
                                 |   biconditional
  
                                 |   materialConditional
- 
-                                |   parenthesisedStatement
  
                                 ;

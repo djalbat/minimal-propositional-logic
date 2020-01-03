@@ -11,8 +11,6 @@
 
      metaMaterialConditional      ::=   metastatement "->" metastatement ;
 
-     parenthesisedMetastatement   ::=   "(" metastatement ")" ;
-
 
      metastatement                ::=   negatedMetastatement
     
@@ -25,8 +23,6 @@
                                     |   metaBiconditional
      
                                     |   metaMaterialConditional
-     
-                                    |   parenthesisedMetastatement
      
                                     ;
 
