@@ -9,8 +9,6 @@
 
      biconditional            ::=   statement ( "iff" | "<=>" ) statement ;
  
-     materialConditional      ::=   statement "->" statement ;
-
 
      statement                ::=   negatedStatement
 
@@ -21,7 +19,5 @@
                                 |   implication
  
                                 |   biconditional
- 
-                                |   materialConditional
  
                                 ;

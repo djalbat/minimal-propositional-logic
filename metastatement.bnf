@@ -9,8 +9,6 @@
 
      metaBiconditional            ::=   metastatement ( "iff" | "<=>" ) metastatement ;
 
-     metaMaterialConditional      ::=   metastatement "->" metastatement ;
-
 
      metastatement                ::=   negatedMetastatement
     
@@ -21,8 +19,6 @@
                                     |   metaImplication
      
                                     |   metaBiconditional
-     
-                                    |   metaMaterialConditional
      
                                     ;
 
