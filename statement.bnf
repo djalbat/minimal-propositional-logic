@@ -1,23 +1,12 @@
 
-     negatedStatement         ::=   "¬"<NO_WHITESPACE>statement ;
+     statement          ::=   "¬"<NO_WHITESPACE>statement
 
-     conjunction              ::=   statement "∧" statement ;
-
-     disjunction              ::=   statement "∨" statement ;
-
-     implication              ::=   statement "=>" statement ;
-
-     biconditional            ::=   statement ( "iff" | "<=>" ) statement ;
+                          |   statement "∧" statement
  
-
-     statement                ::=   negatedStatement
-
-                                |   conjunction
+                          |   statement "∨" statement
  
-                                |   disjunction
+                          |   statement "=>" statement
  
-                                |   implication
+                          |   statement ( "iff" | "<=>" ) statement
  
-                                |   biconditional
- 
-                                ;
+                          ;
