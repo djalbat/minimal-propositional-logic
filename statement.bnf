@@ -1,12 +1,6 @@
 
      statement          ::=   "¬"<NO_WHITESPACE>statement
 
-                          |   statement "∧" statement
- 
-                          |   statement "∨" statement
- 
-                          |   statement "=>" statement
- 
-                          |   statement ( "iff" | "<=>" ) statement
+                          |   statement ( "∧" | "∨" | "=>" | "iff" | "<=>" ) statement
  
                           ;
