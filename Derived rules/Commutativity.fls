@@ -1,32 +1,32 @@
 Rule (ConjunctionCommutes)
   Premise
-    P ∧ Q
+    P /\ Q
   Conclusion
-    Q ∧ P
+    Q /\ P
   Proof
     Q
     P
   Therefore
-    Q ∧ P by ConjunctionIntroduction
+    Q /\ P by ConjunctionIntroduction
 
 Rule (DisjunctionCommutes)
   Premise
-    P ∨ Q
+    P \/ Q
   Conclusion
-    Q ∨ P
+    Q \/ P
   Proof
     Suppose
       P
     Hence
-      Q ∨ P by DisjunctionRightIntroduction
-    P => (Q ∨ P)
+      Q \/ P by DisjunctionRightIntroduction
+    P => (Q \/ P)
     Suppose
       Q
     Hence
-      Q ∨ P by DisjunctionLeftIntroduction
-    Q => (Q ∨ P)
-    P => (Q ∨ P)
-    Q => (Q ∨ P)
-    P ∨ Q
+      Q \/ P by DisjunctionLeftIntroduction
+    Q => (Q \/ P)
+    P => (Q \/ P)
+    Q => (Q \/ P)
+    P \/ Q
   Therefore
-    Q ∨ P by DisjunctionElimination
+    Q \/ P by DisjunctionElimination

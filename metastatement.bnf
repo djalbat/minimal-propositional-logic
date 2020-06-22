@@ -1,8 +1,8 @@
 
-     metastatement         ::=   "¬"<NO_WHITESPACE>metastatement
+     metastatement      ::=   "¬"<NO_WHITESPACE>metastatement
     
-                             |   metastatement ( "∧" | "∨" | "iff" | "=>" | "<=>" ) metastatement
+                          |   metastatement ( "/\\" | "\\/" | "iff" | "=>" | "<=>" ) metastatement
      
-                             ;
+                          ;   
 
  

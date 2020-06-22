@@ -7,7 +7,7 @@ Rule (DoubleNegationIntroduction)
     Suppose
       ¬P
     Hence
-      P ∧ ¬P
-    ¬P => (P ∧ ¬P)
+      P /\ ¬P
+    ¬P => (P /\ ¬P)
   Therefore
     ¬¬P by NegationIntroduction

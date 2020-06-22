@@ -2,9 +2,9 @@ Rule (ConstructiveDilemma)
   Premises
     P => R
     Q => S
-    P ∨ Q
+    P \/ Q
   Conclusion
-    R ∨ S
+    R \/ S
   Proof
     Suppose
       P => R
@@ -15,11 +15,11 @@ Rule (ConstructiveDilemma)
         P => R
         R by ModusPonens
       Hence
-        R∨S
+        R \/ S
     Hence
-      P => (R ∨ S)
-    (P => R) => (P => (R ∨ S))
-    P => (R ∨ S) by ModusPonens
+      P => (R \/ S)
+    (P => R) => (P => (R \/ S))
+    P => (R \/ S) by ModusPonens
     Suppose
       Q => S
     Then
@@ -29,10 +29,10 @@ Rule (ConstructiveDilemma)
         Q => S
         S by ModusPonens
       Hence
-        R ∨ S
+        R \/ S
     Hence
-      Q => (R∨S)
-    (Q => S) => (Q => (R ∨ S))
-    Q => (R ∨ S) by ModusPonens
+      Q => (R \/ S)
+    (Q => S) => (Q => (R \/ S))
+    Q => (R \/ S) by ModusPonens
   Therefore
-    R ∨ S by DisjunctionElimination
+    R \/ S by DisjunctionElimination

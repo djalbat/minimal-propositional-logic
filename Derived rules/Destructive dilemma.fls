@@ -2,9 +2,9 @@ Rule (DestructiveDilemma)
   Premises
     P => R 
     Q => S
-    ¬R ∨ ¬S
+    ¬R \/ ¬S
   Conclusion
-    ¬P ∨ ¬Q
+    ¬P \/ ¬Q
   Proof
     Suppose
       P => R
@@ -14,11 +14,11 @@ Rule (DestructiveDilemma)
       Then
         ¬P by ModusTollens
       Hence
-        ¬P ∨ ¬Q
+        ¬P \/ ¬Q
     Hence
-      ¬R => (¬P ∨ ¬Q)
-    (P => R) => (¬R => (¬P ∨ ¬Q))
-    ¬R => (¬P ∨ ¬Q) by ModusPonens
+      ¬R => (¬P \/ ¬Q)
+    (P => R) => (¬R => (¬P \/ ¬Q))
+    ¬R => (¬P \/ ¬Q) by ModusPonens
     Suppose
       Q => S
     Then
@@ -27,10 +27,10 @@ Rule (DestructiveDilemma)
       Then
         ¬Q by ModusTollens
       Hence
-        ¬P ∨ ¬Q
+        ¬P \/ ¬Q
     Hence
-      ¬S => (¬P ∨ ¬Q)
-    (Q => S) => (¬S => (¬P ∨ ¬Q))
-    ¬S => (¬P ∨ ¬Q) by ModusPonens
+      ¬S => (¬P \/ ¬Q)
+    (Q => S) => (¬S => (¬P \/ ¬Q))
+    ¬S => (¬P \/ ¬Q) by ModusPonens
   Therefore
-    ¬P ∨ ¬Q by DisjunctionElimination
+    ¬P \/ ¬Q by DisjunctionElimination
