@@ -51,3 +51,4 @@ Minimal propositional logic for the [Occam](http://occam.science) proof assistan
 
 * james.smith@openmathematics.org
 * http://djalbat.com
+
