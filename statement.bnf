@@ -1,5 +1,6 @@
 
-     statement          ::=   "(" statement ")"
+
+             statement  ::=   "(" statement ")"
 
                           |   "¬"<NO_WHITESPACE>statement
 
