@@ -18,5 +18,4 @@ Rule (BiconditionalRightElimination)
     Q => P
 
 Rule (BiconditionalEquivalence)
-  Conclusion
-    (P iff Q) iff (P <=> Q)
+  (P iff Q) iff (P <=> Q)

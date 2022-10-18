@@ -5,9 +5,11 @@ Rule (ModusTollens)
   Conclusion
     ¬P
   Proof
-    ¬Q
-    ¬Q => (P => ¬Q) by PositiveParadox
-    P => ¬Q by ModusPonens
+    Suppose
+      P
+    Therefore
+      ¬Q
+    P => ¬Q by ImplicationIntroduction
     P => Q
   Therefore
     ¬P by NegationIntroduction

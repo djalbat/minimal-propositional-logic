@@ -1,14 +1,3 @@
-Rule (ConjunctionCommutes)
-  Premise
-    P /\ Q
-  Conclusion
-    Q /\ P
-  Proof
-    Q
-    P
-  Therefore
-    Q /\ P by ConjunctionIntroduction
-
 Rule (DisjunctionCommutes)
   Premise
     P \/ Q
@@ -17,16 +6,27 @@ Rule (DisjunctionCommutes)
   Proof
     Suppose
       P
-    Hence
-      Q \/ P by DisjunctionRightIntroduction
-    P => (Q \/ P)
+    Therefore
+      Q \/ P by DisjunctionLeftIntroduction
+    P => (Q \/ P) by ImplicationIntroduction
     Suppose
       Q
-    Hence
-      Q \/ P by DisjunctionLeftIntroduction
-    Q => (Q \/ P)
-    P => (Q \/ P)
-    Q => (Q \/ P)
-    P \/ Q
+    Therefore
+      Q \/ P by DisjunctionRightIntroduction
+    Q => (Q \/ P) by ImplicationIntroduction
   Therefore
     Q \/ P by DisjunctionElimination
+
+Rule (ConjunctionCommutes)
+  Premise
+    P /\ Q
+  Conclusion
+    Q /\ P
+  Proof
+    Q by ConjunctionLeftElimination
+    P /\ Q
+    P by ConjunctionRightElimination
+    Q
+  Therefore
+    Q /\ P by ConjunctionIntroduction
+

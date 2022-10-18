@@ -7,7 +7,11 @@ Rule (DoubleNegationIntroduction)
     Suppose
       ¬P
     Hence
-      P /\ ¬P
-    ¬P => (P /\ ¬P)
+      P
+    Therefore
+      P /\ ¬P by ConjunctionIntroduction
+    ¬P => (P /\ ¬P) by ImplicationIntroduction
+    ¬P => P by ConjunctionLeftEliminationWithImplication
+    ¬P => ¬P by ConjunctionRightEliminationWithImplication
   Therefore
     ¬¬P by NegationIntroduction

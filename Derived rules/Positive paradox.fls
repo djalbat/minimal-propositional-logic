@@ -1,15 +1,14 @@
-Rule (PositiveParadox,Simp)
-  Conclusion
-    P => (Q => P)
+Rule (PositiveParadox)
+  P => (Q => P)
   Proof
     Suppose
       P
-    Then
+    Hence
       Suppose
         Q
-      Hence
+      Therefore
         P
-    Hence
-      Q => P
+    Therefore
+      Q => P by ImplicationIntroduction
   Therefore
-    P => (Q => P)
+    P => (Q => P) by ImplicationIntroduction

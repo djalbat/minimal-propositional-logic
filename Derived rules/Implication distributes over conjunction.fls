@@ -1,43 +1,46 @@
 Rule (ConjunctionLeftEliminationWithImplication)
   Premise
-    P => (Q /\ ¬Q)
+    P => (Q /\ R)
   Conclusion
     P => Q
   Proof
     Suppose
       P
     Hence
-      Q /\ ¬Q
-      Q by ConjunctionElimination
+      Q /\ R by ModusPonens
+    Therefore
+      Q by ConjunctionRightElimination
   Therefore
-    P => Q
+    P => Q by ImplicationIntroduction
 
 Rule (ConjunctionRightEliminationWithImplication)
   Premise
-    P => (Q /\ ¬Q)
+    P => (Q /\ R)
   Conclusion
-    P => ¬Q
+    P => R
   Proof
     Suppose
       P
     Hence
-      Q /\ ¬Q
-      ¬Q by ConjunctionLeftElimination
+      Q /\ R by ModusPonens
+    Therefore
+      R by ConjunctionLeftElimination
   Therefore
-    P => ¬Q
+    P => R by ImplicationIntroduction
 
 Rule (ConjunctionIntroductionWithImplication)
   Premises
     P => Q
-    P => ¬Q
+    P => R
   Conclusion
-    P => (Q /\ ¬Q)
+    P => (Q /\ R)
   Proof
     Suppose
       P
     Hence
       Q by ModusPonens
-      ¬Q by ModusPonens
-      Q /\ ¬Q by ConjunctionIntroduction
+      R by ModusPonens
+    Therefore
+      Q /\ R by ConjunctionIntroduction
   Therefore
-    P => (Q /\ ¬Q)
+    P => (Q /\ R) by ImplicationIntroduction

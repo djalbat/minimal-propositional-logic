@@ -8,29 +8,29 @@ Rule (DestructiveDilemma)
   Proof
     Suppose
       P => R
-    Then
+    Hence
       Suppose
         ¬R
-      Then
-        ¬P by ModusTollens
       Hence
-        ¬P \/ ¬Q
-    Hence
-      ¬R => (¬P \/ ¬Q)
-    (P => R) => (¬R => (¬P \/ ¬Q))
+        ¬P by ModusTollens
+      Therefore
+        ¬P \/ ¬Q by DisjunctionRightIntroduction
+    Therefore
+      ¬R => (¬P \/ ¬Q) by ImplicationIntroduction
+    (P => R) => (¬R => (¬P \/ ¬Q)) by ImplicationIntroduction
     ¬R => (¬P \/ ¬Q) by ModusPonens
     Suppose
       Q => S
-    Then
+    Hence
       Suppose
         ¬S
-      Then
-        ¬Q by ModusTollens
       Hence
-        ¬P \/ ¬Q
-    Hence
-      ¬S => (¬P \/ ¬Q)
-    (Q => S) => (¬S => (¬P \/ ¬Q))
+        ¬Q by ModusTollens
+      Therefore
+        ¬P \/ ¬Q by DisjunctionLeftIntroduction
+    Therefore
+      ¬S => (¬P \/ ¬Q) by ImplicationIntroduction
+    (Q => S) => (¬S => (¬P \/ ¬Q)) by ImplicationIntroduction
     ¬S => (¬P \/ ¬Q) by ModusPonens
   Therefore
     ¬P \/ ¬Q by DisjunctionElimination

@@ -7,32 +7,20 @@ Rule (ConstructiveDilemma)
     R \/ S
   Proof
     Suppose
+      P
+    Hence
       P => R
-    Then
-      Suppose
-        P
-      Then
-        P => R
-        R by ModusPonens
-      Hence
-        R \/ S
-    Hence
-      P => (R \/ S)
-    (P => R) => (P => (R \/ S))
-    P => (R \/ S) by ModusPonens
+      R by ModusPonens
+    Therefore
+      R \/ S by DisjunctionRightIntroduction
+    P => (R \/ S) by ImplicationIntroduction
     Suppose
-      Q => S
-    Then
-      Suppose
-        Q
-      Then
-        Q => S
-        S by ModusPonens
-      Hence
-        R \/ S
+      Q
     Hence
-      Q => (R \/ S)
-    (Q => S) => (Q => (R \/ S))
-    Q => (R \/ S) by ModusPonens
+      Q => S
+      S by ModusPonens
+    Therefore
+      R \/ S by DisjunctionLeftIntroduction
+    Q => (R \/ S) by ImplicationIntroduction
   Therefore
     R \/ S by DisjunctionElimination
