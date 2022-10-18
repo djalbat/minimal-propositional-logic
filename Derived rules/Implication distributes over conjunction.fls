@@ -1,4 +1,4 @@
-Rule (ConjunctionLeftEliminationWithImplication)
+Rule (ConjunctionRightEliminationWithImplication)
   Premise
     P => (Q /\ R)
   Conclusion
@@ -13,7 +13,7 @@ Rule (ConjunctionLeftEliminationWithImplication)
   Therefore
     P => Q by ImplicationIntroduction
 
-Rule (ConjunctionRightEliminationWithImplication)
+Rule (ConjunctionLeftEliminationWithImplication)
   Premise
     P => (Q /\ R)
   Conclusion

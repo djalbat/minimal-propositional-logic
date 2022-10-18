@@ -1,6 +1,6 @@
 Rule (NegationIntroduction,ProofByNegation)
   Premises
-    R => S
-    R => ¬S
+    P => Q
+    P => ¬Q
   Conclusion
-    ¬R
+    ¬P

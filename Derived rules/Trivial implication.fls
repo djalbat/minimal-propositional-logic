@@ -1,0 +1,9 @@
+Rule (TrivialImplication)
+  P => P
+  Proof
+    Suppose
+      P
+    Therefore
+      P
+  Therefore
+    P => P by ImplicationIntroduction

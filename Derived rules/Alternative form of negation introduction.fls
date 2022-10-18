@@ -4,7 +4,7 @@ Rule (NegationIntroductionAlternativeForm)
   Conclusion
     ¬P
   Proof
-    P => Q by ConjunctionLeftEliminationWithImplication
+    P => Q by ConjunctionRightEliminationWithImplication
     P => ¬Q by ConjunctionLeftEliminationWithImplication
   Therefore
     ¬P by NegationIntroduction
