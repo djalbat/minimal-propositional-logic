@@ -1,3 +1,5 @@
 {
-  "repository": "https://github.com/djalbat/minimal-propositional-logic"
+  "version": "0.0.0",
+  "repository": "https://github.com/djalbat/minimal-propositional-logic",
+  "dependencies": {}
 }
