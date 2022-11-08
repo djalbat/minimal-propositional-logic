@@ -19,3 +19,4 @@ Rule (BiconditionalRightElimination)
 
 Rule (BiconditionalEquivalence)
   (P iff Q) iff (P <=> Q)
+
