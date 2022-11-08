@@ -43,7 +43,7 @@ Minimal propositional logic for [Occam](https://occam.science).
 \frac{P\iff{Q}}{Q\Rightarrow{P}}\quad\small\text{[BiconditionalRightElimination]}
 \]
 
-As well as these rules there are many derived rules. See the package contents for details.
+As well as these rules there are many derived rules. See the package contents for details...
 
 ## Resources
 
@@ -51,4 +51,4 @@ As well as these rules there are many derived rules. See the package contents fo
 
 ## Contact
 
-* http://djalbat.com
+* https://djalbat.com
