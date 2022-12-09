@@ -1,5 +1,6 @@
 Rule (TrivialImplication)
-  P => P
+  Conclusion
+    P => P
   Proof
     Suppose
       P

@@ -1,5 +1,6 @@
 Rule (PositiveParadox)
-  P => (Q => P)
+  Conclusion
+    P => (Q => P)
   Proof
     Suppose
       P
