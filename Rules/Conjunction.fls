@@ -1,18 +1,18 @@
 Rule (ConjunctionIntroduction)
   Premises
-    S
-    T
+    P
+    Q
   Conclusion
-    S /\ T
+    P /\ Q
 
 Rule (ConjunctionLeftElimination)
   Premise
-    S /\ T
+    P /\ Q
   Conclusion
-    T
+    Q
 
 Rule (ConjunctionRightElimination)
   Premise
-    S /\ T
+    P /\ Q
   Conclusion
-    S
+    P
