@@ -7,7 +7,7 @@ Rule (ModusTollens)
   Proof
     Suppose
       P
-    Therefore
+    Then
       ¬Q
     P => ¬Q by ImplicationIntroduction
     P => Q

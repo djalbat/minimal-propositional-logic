@@ -6,12 +6,12 @@ Rule (DisjunctionCommutes)
   Proof
     Suppose
       P
-    Therefore
+    Then
       Q \/ P by DisjunctionLeftIntroduction
     P => (Q \/ P) by ImplicationIntroduction
     Suppose
       Q
-    Therefore
+    Then
       Q \/ P by DisjunctionRightIntroduction
     Q => (Q \/ P) by ImplicationIntroduction
   Therefore

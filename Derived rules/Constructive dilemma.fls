@@ -11,7 +11,7 @@ Rule (ConstructiveDilemma)
     Hence
       P => R
       R by ModusPonens
-    Therefore
+    Then
       R \/ S by DisjunctionRightIntroduction
     P => (R \/ S) by ImplicationIntroduction
     Suppose
@@ -19,7 +19,7 @@ Rule (ConstructiveDilemma)
     Hence
       Q => S
       S by ModusPonens
-    Therefore
+    Then
       R \/ S by DisjunctionLeftIntroduction
     Q => (R \/ S) by ImplicationIntroduction
   Therefore

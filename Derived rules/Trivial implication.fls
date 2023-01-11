@@ -4,7 +4,7 @@ Rule (TrivialImplication)
   Proof
     Suppose
       P
-    Therefore
+    Then
       P
   Therefore
     P => P by ImplicationIntroduction

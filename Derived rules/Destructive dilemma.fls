@@ -13,9 +13,9 @@ Rule (DestructiveDilemma)
         ¬R
       Hence
         ¬P by ModusTollens
-      Therefore
+      Then
         ¬P \/ ¬Q by DisjunctionRightIntroduction
-    Therefore
+    Then
       ¬R => (¬P \/ ¬Q) by ImplicationIntroduction
     (P => R) => (¬R => (¬P \/ ¬Q)) by ImplicationIntroduction
     ¬R => (¬P \/ ¬Q) by ModusPonens
@@ -26,9 +26,9 @@ Rule (DestructiveDilemma)
         ¬S
       Hence
         ¬Q by ModusTollens
-      Therefore
+      Then
         ¬P \/ ¬Q by DisjunctionLeftIntroduction
-    Therefore
+    Then
       ¬S => (¬P \/ ¬Q) by ImplicationIntroduction
     (Q => S) => (¬S => (¬P \/ ¬Q)) by ImplicationIntroduction
     ¬S => (¬P \/ ¬Q) by ModusPonens

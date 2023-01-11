@@ -8,7 +8,7 @@ Rule (ConjunctionRightEliminationWithImplication)
       P
     Hence
       Q /\ R by ModusPonens
-    Therefore
+    Then
       Q by ConjunctionRightElimination
   Therefore
     P => Q by ImplicationIntroduction
@@ -23,7 +23,7 @@ Rule (ConjunctionLeftEliminationWithImplication)
       P
     Hence
       Q /\ R by ModusPonens
-    Therefore
+    Then
       R by ConjunctionLeftElimination
   Therefore
     P => R by ImplicationIntroduction
@@ -40,7 +40,7 @@ Rule (ConjunctionIntroductionWithImplication)
     Hence
       Q by ModusPonens
       R by ModusPonens
-    Therefore
+    Then
       Q /\ R by ConjunctionIntroduction
   Therefore
     P => (Q /\ R) by ImplicationIntroduction

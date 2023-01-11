@@ -8,7 +8,7 @@ Rule (DoubleNegationIntroduction)
       ¬P
     Hence
       P
-    Therefore
+    Then
       P /\ ¬P by ConjunctionIntroduction
     ¬P => (P /\ ¬P) by ImplicationIntroduction
     ¬P => P by ConjunctionRightEliminationWithImplication

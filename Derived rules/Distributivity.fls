@@ -7,12 +7,12 @@ Rule (ConjunctionDistributesOverDisjunction)
     P by ConjunctionRightElimination
     Suppose
       Q
-    Therefore
+    Then
       P /\ Q by ConjunctionIntroduction
     Q => (P /\ Q) by ImplicationIntroduction
     Suppose
       R
-    Therefore
+    Then
       P /\ R by ConjunctionIntroduction
     R => (P /\ R) by ImplicationIntroduction
     Q \/ R by ConjunctionLeftElimination
@@ -27,12 +27,12 @@ Rule (ConjuctionDistributedOverDisjunction)
   Proof
     Suppose
       P /\ Q
-    Therefore
+    Then
       P by ConjunctionRightElimination
     (P /\ Q) => P by ImplicationIntroduction
     Suppose
       P /\ R
-    Therefore
+    Then
       P by ConjunctionRightElimination
     (P /\ Q) => P
     (P /\ R) => P by ImplicationIntroduction
@@ -41,14 +41,14 @@ Rule (ConjuctionDistributedOverDisjunction)
       P /\ Q
     Hence
       Q by ConjunctionLeftElimination
-    Therefore
+    Then
       Q \/ R by DisjunctionRightIntroduction
     (P /\ Q) => (Q \/ R) by ImplicationIntroduction
     Suppose
       P /\ R
     Hence
       R by ConjunctionLeftElimination
-    Therefore
+    Then
       Q \/ R by DisjunctionLeftIntroduction
     (P /\ R) => (Q \/ R) by ImplicationIntroduction
     (P /\ Q) \/ (P /\ R)
@@ -67,7 +67,7 @@ Rule (DisjunctionDistributesOverConjunction)
     Hence
       P \/ Q by DisjunctionRightIntroduction
       P \/ R by DisjunctionRightIntroduction
-    Therefore
+    Then
       (P \/ Q) /\ (P \/ R) by ConjunctionIntroduction
     P => ((P \/ Q) /\ (P \/ R)) by ImplicationIntroduction
     Suppose
@@ -77,7 +77,7 @@ Rule (DisjunctionDistributesOverConjunction)
       P \/ Q by DisjunctionLeftIntroduction
       R by ConjunctionLeftElimination
       P \/ R by DisjunctionLeftIntroduction
-    Therefore
+    Then
       (P \/ Q) /\ (P \/ R) by ConjunctionIntroduction
     (Q /\ R) => ((P \/ Q) /\ (P \/ R)) by ImplicationIntroduction
     P => ((P \/ Q) /\ (P \/ R))
@@ -93,7 +93,7 @@ Rule (DisjunctionDistributedOverConjunction)
   Proof
     Suppose
       P
-    Therefore
+    Then
       P \/ (Q /\ R) by DisjunctionRightIntroduction
     P => (P \/ (Q /\ R)) by ImplicationIntroduction
     Suppose
@@ -101,7 +101,7 @@ Rule (DisjunctionDistributedOverConjunction)
     Hence
       Suppose
         P
-      Therefore
+      Then
         P \/ (Q /\ R) by DisjunctionRightIntroduction
       P => (P \/ (Q /\ R)) by ImplicationIntroduction
       Suppose
@@ -109,13 +109,13 @@ Rule (DisjunctionDistributedOverConjunction)
       Hence
         R
         Q /\ R by ConjunctionIntroduction
-      Therefore
+      Then
         P \/ (Q /\ R) by DisjunctionLeftIntroduction
       Q => (P \/ (Q /\ R)) by ImplicationIntroduction
       P \/ Q by ConjunctionRightElimination
       P => (P \/ (Q /\ R))
       Q => (P \/ (Q /\ R))
-    Therefore
+    Then
       P \/ (Q /\ R) by DisjunctionElimination
     R => (P \/ (Q /\ R)) by ImplicationIntroduction
     P => (P \/ (Q /\ R))

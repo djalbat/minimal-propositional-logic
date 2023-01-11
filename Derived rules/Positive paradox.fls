@@ -7,9 +7,9 @@ Rule (PositiveParadox)
     Hence
       Suppose
         Q
-      Therefore
+      Then
         P
-    Therefore
+    Then
       Q => P by ImplicationIntroduction
   Therefore
     P => (Q => P) by ImplicationIntroduction
