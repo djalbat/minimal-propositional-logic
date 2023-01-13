@@ -29,4 +29,3 @@ Rule (ConjunctionCommutes)
     Q
   Therefore
     Q /\ P by ConjunctionIntroduction
-
