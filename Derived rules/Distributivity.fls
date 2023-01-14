@@ -5,12 +5,12 @@ Rule (ConjunctionDistributesOverDisjunction)
     (P /\ Q) \/ (P /\ R)
   Proof
     P by ConjunctionRightElimination
-    Suppose
+    Premise
       Q
     Then
       P /\ Q by ConjunctionIntroduction
     Q => (P /\ Q) by ImplicationIntroduction
-    Suppose
+    Premise
       R
     Then
       P /\ R by ConjunctionIntroduction
@@ -25,26 +25,26 @@ Rule (ConjuctionDistributedOverDisjunction)
   Conclusion
     P /\ (Q \/ R)
   Proof
-    Suppose
+    Premise
       P /\ Q
     Then
       P by ConjunctionRightElimination
     (P /\ Q) => P by ImplicationIntroduction
-    Suppose
+    Premise
       P /\ R
     Then
       P by ConjunctionRightElimination
     (P /\ Q) => P
     (P /\ R) => P by ImplicationIntroduction
     P by DisjunctionElimination
-    Suppose
+    Premise
       P /\ Q
     Hence
       Q by ConjunctionLeftElimination
     Then
       Q \/ R by DisjunctionRightIntroduction
     (P /\ Q) => (Q \/ R) by ImplicationIntroduction
-    Suppose
+    Premise
       P /\ R
     Hence
       R by ConjunctionLeftElimination
@@ -62,7 +62,7 @@ Rule (DisjunctionDistributesOverConjunction)
   Conclusion
     (P \/ Q) /\ (P \/ R)
   Proof
-    Suppose
+    Premise
       P
     Hence
       P \/ Q by DisjunctionRightIntroduction
@@ -70,7 +70,7 @@ Rule (DisjunctionDistributesOverConjunction)
     Then
       (P \/ Q) /\ (P \/ R) by ConjunctionIntroduction
     P => ((P \/ Q) /\ (P \/ R)) by ImplicationIntroduction
-    Suppose
+    Premise
       Q /\ R
     Hence
       Q by ConjunctionRightElimination
@@ -91,20 +91,20 @@ Rule (DisjunctionDistributedOverConjunction)
   Conclusion
     P \/ (Q /\ R)
   Proof
-    Suppose
+    Premise
       P
     Then
       P \/ (Q /\ R) by DisjunctionRightIntroduction
     P => (P \/ (Q /\ R)) by ImplicationIntroduction
-    Suppose
+    Premise
       R
     Hence
-      Suppose
+      Premise
         P
       Then
         P \/ (Q /\ R) by DisjunctionRightIntroduction
       P => (P \/ (Q /\ R)) by ImplicationIntroduction
-      Suppose
+      Premise
         Q
       Hence
         R

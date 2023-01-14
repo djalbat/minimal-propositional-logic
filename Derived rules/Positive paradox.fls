@@ -2,10 +2,10 @@ Rule (PositiveParadox)
   Conclusion
     P => (Q => P)
   Proof
-    Suppose
+    Premise
       P
     Hence
-      Suppose
+      Premise
         Q
       Then
         P

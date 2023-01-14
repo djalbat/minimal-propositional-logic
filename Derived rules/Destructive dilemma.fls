@@ -6,10 +6,10 @@ Rule (DestructiveDilemma)
   Conclusion
     ¬P \/ ¬Q
   Proof
-    Suppose
+    Premise
       P => R
     Hence
-      Suppose
+      Premise
         ¬R
       Hence
         ¬P by ModusTollens
@@ -19,10 +19,10 @@ Rule (DestructiveDilemma)
       ¬R => (¬P \/ ¬Q) by ImplicationIntroduction
     (P => R) => (¬R => (¬P \/ ¬Q)) by ImplicationIntroduction
     ¬R => (¬P \/ ¬Q) by ModusPonens
-    Suppose
+    Premise
       Q => S
     Hence
-      Suppose
+      Premise
         ¬S
       Hence
         ¬Q by ModusTollens

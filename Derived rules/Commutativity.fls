@@ -4,12 +4,12 @@ Rule (DisjunctionCommutes)
   Conclusion
     Q \/ P
   Proof
-    Suppose
+    Premise
       P
     Then
       Q \/ P by DisjunctionLeftIntroduction
     P => (Q \/ P) by ImplicationIntroduction
-    Suppose
+    Premise
       Q
     Then
       Q \/ P by DisjunctionRightIntroduction

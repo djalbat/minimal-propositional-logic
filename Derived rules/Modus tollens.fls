@@ -5,7 +5,7 @@ Rule (ModusTollens)
   Conclusion
     ¬P
   Proof
-    Suppose
+    Premise
       P
     Then
       ¬Q
