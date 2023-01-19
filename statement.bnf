@@ -1,8 +1,8 @@
 
 
-             statement  ::=   "¬"<NO_WHITESPACE>statement
+             statement  ::=   "¬"<NO_WHITESPACE>metaargument
 
-                          |   statement ( "/\\" | "\\/" | "iff" | "=>" | "<=>" ) statement
+                          |   metaargument ( "/\\" | "\\/" | "iff" | "=>" | "<=>" ) metaargument
  
                           ;
 

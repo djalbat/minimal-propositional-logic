@@ -1,0 +1,6 @@
+Combinator ¬Statement
+
+Combinator Statement /\ Statement
+Combinator Statement \/ Statement
+Combinator Statement => Statement
+Combinator Statement <=> Statement
