@@ -4,3 +4,4 @@ Combinator Statement /\ Statement
 Combinator Statement \/ Statement
 Combinator Statement => Statement
 Combinator Statement <=> Statement
+Combinator Statement iff Statement
