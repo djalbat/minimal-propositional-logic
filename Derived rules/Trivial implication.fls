@@ -1,3 +1,5 @@
+Metavariable P:Statement
+
 Rule (TrivialImplication)
   Conclusion
     P => P

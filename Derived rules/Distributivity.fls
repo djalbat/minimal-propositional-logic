@@ -1,3 +1,7 @@
+Metavariable P:Statement
+Metavariable Q:Statement
+Metavariable R:Statement
+
 Rule (ConjunctionDistributesOverDisjunction)
   Premise
     P /\ (Q \/ R)

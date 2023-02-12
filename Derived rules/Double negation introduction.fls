@@ -1,3 +1,5 @@
+Metavariable P:Statement
+
 Rule (DoubleNegationIntroduction)
   Premise
     P
