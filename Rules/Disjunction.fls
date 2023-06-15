@@ -6,18 +6,18 @@ Rule (DisjunctionRightIntroduction,RightAddtion)
   Premise
     P
   Conclusion
-    P \/ Q
+    P ∨ Q
 
 Rule (DisjunctionLeftIntroduction,LeftAddition)
   Premise
     Q
   Conclusion
-    P \/ Q
+    P ∨ Q
 
 Rule (DisjunctionElimination,ProofByCases)
   Premises
-    P => R
-    Q => R
-    P \/ Q
+    P ⇒ R
+    Q ⇒ R
+    P ∨ Q
   Conclusion
     R

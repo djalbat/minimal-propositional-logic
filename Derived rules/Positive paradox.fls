@@ -3,7 +3,7 @@ Metavariable Q:Statement
 
 Rule (PositiveParadox)
   Conclusion
-    P => (Q => P)
+    P ⇒ (Q ⇒ P)
   Proof
     Premise
       P
@@ -13,6 +13,6 @@ Rule (PositiveParadox)
       Then
         P
     Then
-      Q => P by ImplicationIntroduction
+      Q ⇒ P by ImplicationIntroduction
   Therefore
-    P => (Q => P) by ImplicationIntroduction
+    P ⇒ (Q ⇒ P) by ImplicationIntroduction

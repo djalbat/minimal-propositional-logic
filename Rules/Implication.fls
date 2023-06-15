@@ -5,11 +5,11 @@ Rule (ImplicationIntroduction,ConditionalProof)
   Premise
     [P]...Q
   Conclusion
-    P => Q
+    P ⇒ Q
 
 Rule (ModusPonens,ImplicationElimination,RuleOfDetachment)
   Premises
-    P => Q
+    P ⇒ Q
     P 
   Conclusion
     Q

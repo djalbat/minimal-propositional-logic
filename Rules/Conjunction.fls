@@ -6,16 +6,16 @@ Rule (ConjunctionIntroduction)
     P
     Q
   Conclusion
-    P /\ Q
+    P ∧ Q
 
 Rule (ConjunctionLeftElimination)
   Premise
-    P /\ Q
+    P ∧ Q
   Conclusion
     Q
 
 Rule (ConjunctionRightElimination)
   Premise
-    P /\ Q
+    P ∧ Q
   Conclusion
     P

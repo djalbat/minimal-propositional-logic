@@ -4,126 +4,126 @@ Metavariable R:Statement
 
 Rule (ConjunctionDistributesOverDisjunction)
   Premise
-    P /\ (Q \/ R)
+    P ∧ (Q ∨ R)
   Conclusion
-    (P /\ Q) \/ (P /\ R)
+    (P ∧ Q) ∨ (P ∧ R)
   Proof
     P by ConjunctionRightElimination
     Premise
       Q
     Then
-      P /\ Q by ConjunctionIntroduction
-    Q => (P /\ Q) by ImplicationIntroduction
+      P ∧ Q by ConjunctionIntroduction
+    Q ⇒ (P ∧ Q) by ImplicationIntroduction
     Premise
       R
     Then
-      P /\ R by ConjunctionIntroduction
-    R => (P /\ R) by ImplicationIntroduction
-    Q \/ R by ConjunctionLeftElimination
+      P ∧ R by ConjunctionIntroduction
+    R ⇒ (P ∧ R) by ImplicationIntroduction
+    Q ∨ R by ConjunctionLeftElimination
   Therefore
-    (P /\ Q) \/ (P /\ R) by ConstructiveDilemma
+    (P ∧ Q) ∨ (P ∧ R) by ConstructiveDilemma
 
 Rule (ConjuctionDistributedOverDisjunction)
   Premise
-    (P /\ Q) \/ (P /\ R)
+    (P ∧ Q) ∨ (P ∧ R)
   Conclusion
-    P /\ (Q \/ R)
+    P ∧ (Q ∨ R)
   Proof
     Premise
-      P /\ Q
+      P ∧ Q
     Then
       P by ConjunctionRightElimination
-    (P /\ Q) => P by ImplicationIntroduction
+    (P ∧ Q) ⇒ P by ImplicationIntroduction
     Premise
-      P /\ R
+      P ∧ R
     Then
       P by ConjunctionRightElimination
-    (P /\ Q) => P
-    (P /\ R) => P by ImplicationIntroduction
+    (P ∧ Q) ⇒ P
+    (P ∧ R) ⇒ P by ImplicationIntroduction
     P by DisjunctionElimination
     Premise
-      P /\ Q
+      P ∧ Q
     Hence
       Q by ConjunctionLeftElimination
     Then
-      Q \/ R by DisjunctionRightIntroduction
-    (P /\ Q) => (Q \/ R) by ImplicationIntroduction
+      Q ∨ R by DisjunctionRightIntroduction
+    (P ∧ Q) ⇒ (Q ∨ R) by ImplicationIntroduction
     Premise
-      P /\ R
+      P ∧ R
     Hence
       R by ConjunctionLeftElimination
     Then
-      Q \/ R by DisjunctionLeftIntroduction
-    (P /\ R) => (Q \/ R) by ImplicationIntroduction
-    (P /\ Q) \/ (P /\ R)
-    Q \/ R by DisjunctionElimination
+      Q ∨ R by DisjunctionLeftIntroduction
+    (P ∧ R) ⇒ (Q ∨ R) by ImplicationIntroduction
+    (P ∧ Q) ∨ (P ∧ R)
+    Q ∨ R by DisjunctionElimination
   Therefore
-    P /\ (Q \/ R) by ConjunctionIntroduction
+    P ∧ (Q ∨ R) by ConjunctionIntroduction
 
 Rule (DisjunctionDistributesOverConjunction)
   Premise
-    P \/ (Q /\ R)
+    P ∨ (Q ∧ R)
   Conclusion
-    (P \/ Q) /\ (P \/ R)
+    (P ∨ Q) ∧ (P ∨ R)
   Proof
     Premise
       P
     Hence
-      P \/ Q by DisjunctionRightIntroduction
-      P \/ R by DisjunctionRightIntroduction
+      P ∨ Q by DisjunctionRightIntroduction
+      P ∨ R by DisjunctionRightIntroduction
     Then
-      (P \/ Q) /\ (P \/ R) by ConjunctionIntroduction
-    P => ((P \/ Q) /\ (P \/ R)) by ImplicationIntroduction
+      (P ∨ Q) ∧ (P ∨ R) by ConjunctionIntroduction
+    P ⇒ ((P ∨ Q) ∧ (P ∨ R)) by ImplicationIntroduction
     Premise
-      Q /\ R
+      Q ∧ R
     Hence
       Q by ConjunctionRightElimination
-      P \/ Q by DisjunctionLeftIntroduction
+      P ∨ Q by DisjunctionLeftIntroduction
       R by ConjunctionLeftElimination
-      P \/ R by DisjunctionLeftIntroduction
+      P ∨ R by DisjunctionLeftIntroduction
     Then
-      (P \/ Q) /\ (P \/ R) by ConjunctionIntroduction
-    (Q /\ R) => ((P \/ Q) /\ (P \/ R)) by ImplicationIntroduction
-    P => ((P \/ Q) /\ (P \/ R))
-    P \/ (Q /\ R)
+      (P ∨ Q) ∧ (P ∨ R) by ConjunctionIntroduction
+    (Q ∧ R) ⇒ ((P ∨ Q) ∧ (P ∨ R)) by ImplicationIntroduction
+    P ⇒ ((P ∨ Q) ∧ (P ∨ R))
+    P ∨ (Q ∧ R)
   Therefore
-    (P \/ Q) /\ (P \/ R) by DisjunctionElimination
+    (P ∨ Q) ∧ (P ∨ R) by DisjunctionElimination
 
 Rule (DisjunctionDistributedOverConjunction)
   Premise
-    (P \/ Q) /\ (P \/ R)
+    (P ∨ Q) ∧ (P ∨ R)
   Conclusion
-    P \/ (Q /\ R)
+    P ∨ (Q ∧ R)
   Proof
     Premise
       P
     Then
-      P \/ (Q /\ R) by DisjunctionRightIntroduction
-    P => (P \/ (Q /\ R)) by ImplicationIntroduction
+      P ∨ (Q ∧ R) by DisjunctionRightIntroduction
+    P ⇒ (P ∨ (Q ∧ R)) by ImplicationIntroduction
     Premise
       R
     Hence
       Premise
         P
       Then
-        P \/ (Q /\ R) by DisjunctionRightIntroduction
-      P => (P \/ (Q /\ R)) by ImplicationIntroduction
+        P ∨ (Q ∧ R) by DisjunctionRightIntroduction
+      P ⇒ (P ∨ (Q ∧ R)) by ImplicationIntroduction
       Premise
         Q
       Hence
         R
-        Q /\ R by ConjunctionIntroduction
+        Q ∧ R by ConjunctionIntroduction
       Then
-        P \/ (Q /\ R) by DisjunctionLeftIntroduction
-      Q => (P \/ (Q /\ R)) by ImplicationIntroduction
-      P \/ Q by ConjunctionRightElimination
-      P => (P \/ (Q /\ R))
-      Q => (P \/ (Q /\ R))
+        P ∨ (Q ∧ R) by DisjunctionLeftIntroduction
+      Q ⇒ (P ∨ (Q ∧ R)) by ImplicationIntroduction
+      P ∨ Q by ConjunctionRightElimination
+      P ⇒ (P ∨ (Q ∧ R))
+      Q ⇒ (P ∨ (Q ∧ R))
     Then
-      P \/ (Q /\ R) by DisjunctionElimination
-    R => (P \/ (Q /\ R)) by ImplicationIntroduction
-    P => (P \/ (Q /\ R))
-    (P \/ Q) /\ (P \/ R)
-    P \/ R by ConjunctionLeftElimination
+      P ∨ (Q ∧ R) by DisjunctionElimination
+    R ⇒ (P ∨ (Q ∧ R)) by ImplicationIntroduction
+    P ⇒ (P ∨ (Q ∧ R))
+    (P ∨ Q) ∧ (P ∨ R)
+    P ∨ R by ConjunctionLeftElimination
   Therefore
-    P \/ (Q /\ R) by DisjunctionElimination
+    P ∨ (Q ∧ R) by DisjunctionElimination

@@ -3,32 +3,32 @@ Metavariable Q:Statement
 
 Rule (DisjunctionCommutes)
   Premise
-    P \/ Q
+    P ∨ Q
   Conclusion
-    Q \/ P
+    Q ∨ P
   Proof
     Premise
       P
     Then
-      Q \/ P by DisjunctionLeftIntroduction
-    P => (Q \/ P) by ImplicationIntroduction
+      Q ∨ P by DisjunctionLeftIntroduction
+    P ⇒ (Q ∨ P) by ImplicationIntroduction
     Premise
       Q
     Then
-      Q \/ P by DisjunctionRightIntroduction
-    Q => (Q \/ P) by ImplicationIntroduction
+      Q ∨ P by DisjunctionRightIntroduction
+    Q ⇒ (Q ∨ P) by ImplicationIntroduction
   Therefore
-    Q \/ P by DisjunctionElimination
+    Q ∨ P by DisjunctionElimination
 
 Rule (ConjunctionCommutes)
   Premise
-    P /\ Q
+    P ∧ Q
   Conclusion
-    Q /\ P
+    Q ∧ P
   Proof
     Q by ConjunctionLeftElimination
-    P /\ Q
+    P ∧ Q
     P by ConjunctionRightElimination
     Q
   Therefore
-    Q /\ P by ConjunctionIntroduction
+    Q ∧ P by ConjunctionIntroduction

@@ -4,40 +4,40 @@ Metavariable R:Statement
 
 Rule (ConjunctionRightEliminationWithImplication)
   Premise
-    P => (Q /\ R)
+    P ⇒ (Q ∧ R)
   Conclusion
-    P => Q
+    P ⇒ Q
   Proof
     Premise
       P
     Hence
-      Q /\ R by ModusPonens
+      Q ∧ R by ModusPonens
     Then
       Q by ConjunctionRightElimination
   Therefore
-    P => Q by ImplicationIntroduction
+    P ⇒ Q by ImplicationIntroduction
 
 Rule (ConjunctionLeftEliminationWithImplication)
   Premise
-    P => (Q /\ R)
+    P ⇒ (Q ∧ R)
   Conclusion
-    P => R
+    P ⇒ R
   Proof
     Premise
       P
     Hence
-      Q /\ R by ModusPonens
+      Q ∧ R by ModusPonens
     Then
       R by ConjunctionLeftElimination
   Therefore
-    P => R by ImplicationIntroduction
+    P ⇒ R by ImplicationIntroduction
 
 Rule (ConjunctionIntroductionWithImplication)
   Premises
-    P => Q
-    P => R
+    P ⇒ Q
+    P ⇒ R
   Conclusion
-    P => (Q /\ R)
+    P ⇒ (Q ∧ R)
   Proof
     Premise
       P
@@ -45,6 +45,6 @@ Rule (ConjunctionIntroductionWithImplication)
       Q by ModusPonens
       R by ModusPonens
     Then
-      Q /\ R by ConjunctionIntroduction
+      Q ∧ R by ConjunctionIntroduction
   Therefore
-    P => (Q /\ R) by ImplicationIntroduction
+    P ⇒ (Q ∧ R) by ImplicationIntroduction

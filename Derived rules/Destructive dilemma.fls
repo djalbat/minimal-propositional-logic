@@ -5,37 +5,37 @@ Metavariable S:Statement
 
 Rule (DestructiveDilemma)
   Premises
-    P => R 
-    Q => S
-    ¬R \/ ¬S
+    P ⇒ R 
+    Q ⇒ S
+    ¬R ∨ ¬S
   Conclusion
-    ¬P \/ ¬Q
+    ¬P ∨ ¬Q
   Proof
     Premise
-      P => R
+      P ⇒ R
     Hence
       Premise
         ¬R
       Hence
         ¬P by ModusTollens
       Then
-        ¬P \/ ¬Q by DisjunctionRightIntroduction
+        ¬P ∨ ¬Q by DisjunctionRightIntroduction
     Then
-      ¬R => (¬P \/ ¬Q) by ImplicationIntroduction
-    (P => R) => (¬R => (¬P \/ ¬Q)) by ImplicationIntroduction
-    ¬R => (¬P \/ ¬Q) by ModusPonens
+      ¬R ⇒ (¬P ∨ ¬Q) by ImplicationIntroduction
+    (P ⇒ R) ⇒ (¬R ⇒ (¬P ∨ ¬Q)) by ImplicationIntroduction
+    ¬R ⇒ (¬P ∨ ¬Q) by ModusPonens
     Premise
-      Q => S
+      Q ⇒ S
     Hence
       Premise
         ¬S
       Hence
         ¬Q by ModusTollens
       Then
-        ¬P \/ ¬Q by DisjunctionLeftIntroduction
+        ¬P ∨ ¬Q by DisjunctionLeftIntroduction
     Then
-      ¬S => (¬P \/ ¬Q) by ImplicationIntroduction
-    (Q => S) => (¬S => (¬P \/ ¬Q)) by ImplicationIntroduction
-    ¬S => (¬P \/ ¬Q) by ModusPonens
+      ¬S ⇒ (¬P ∨ ¬Q) by ImplicationIntroduction
+    (Q ⇒ S) ⇒ (¬S ⇒ (¬P ∨ ¬Q)) by ImplicationIntroduction
+    ¬S ⇒ (¬P ∨ ¬Q) by ModusPonens
   Therefore
-    ¬P \/ ¬Q by DisjunctionElimination
+    ¬P ∨ ¬Q by DisjunctionElimination

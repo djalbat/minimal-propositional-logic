@@ -11,9 +11,9 @@ Rule (DoubleNegationIntroduction)
     Hence
       P
     Then
-      P /\ ¬P by ConjunctionIntroduction
-    ¬P => (P /\ ¬P) by ImplicationIntroduction
-    ¬P => P by ConjunctionRightEliminationWithImplication
-    ¬P => ¬P by ConjunctionLeftEliminationWithImplication
+      P ∧ ¬P by ConjunctionIntroduction
+    ¬P ⇒ (P ∧ ¬P) by ImplicationIntroduction
+    ¬P ⇒ P by ConjunctionRightEliminationWithImplication
+    ¬P ⇒ ¬P by ConjunctionLeftEliminationWithImplication
   Therefore
     ¬¬P by NegationIntroduction

@@ -3,11 +3,11 @@ Metavariable Q:Statement
 
 Rule (NegationIntroductionAlternativeForm)
   Premise
-    P => (Q /\ ¬Q)
+    P ⇒ (Q ∧ ¬Q)
   Conclusion
     ¬P
   Proof
-    P => Q by ConjunctionRightEliminationWithImplication
-    P => ¬Q by ConjunctionLeftEliminationWithImplication
+    P ⇒ Q by ConjunctionRightEliminationWithImplication
+    P ⇒ ¬Q by ConjunctionLeftEliminationWithImplication
   Therefore
     ¬P by NegationIntroduction

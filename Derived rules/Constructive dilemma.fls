@@ -5,27 +5,27 @@ Metavariable S:Statement
 
 Rule (ConstructiveDilemma)
   Premises
-    P => R
-    Q => S
-    P \/ Q
+    P ⇒ R
+    Q ⇒ S
+    P ∨ Q
   Conclusion
-    R \/ S
+    R ∨ S
   Proof
     Premise
       P
     Hence
-      P => R
+      P ⇒ R
       R by ModusPonens
     Then
-      R \/ S by DisjunctionRightIntroduction
-    P => (R \/ S) by ImplicationIntroduction
+      R ∨ S by DisjunctionRightIntroduction
+    P ⇒ (R ∨ S) by ImplicationIntroduction
     Premise
       Q
     Hence
-      Q => S
+      Q ⇒ S
       S by ModusPonens
     Then
-      R \/ S by DisjunctionLeftIntroduction
-    Q => (R \/ S) by ImplicationIntroduction
+      R ∨ S by DisjunctionLeftIntroduction
+    Q ⇒ (R ∨ S) by ImplicationIntroduction
   Therefore
-    R \/ S by DisjunctionElimination
+    R ∨ S by DisjunctionElimination

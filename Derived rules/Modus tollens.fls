@@ -3,7 +3,7 @@ Metavariable Q:Statement
 
 Rule (ModusTollens)
   Premises
-    P => Q 
+    P ⇒ Q 
     ¬Q
   Conclusion
     ¬P
@@ -12,7 +12,7 @@ Rule (ModusTollens)
       P
     Then
       ¬Q
-    P => ¬Q by ImplicationIntroduction
-    P => Q
+    P ⇒ ¬Q by ImplicationIntroduction
+    P ⇒ Q
   Therefore
     ¬P by NegationIntroduction

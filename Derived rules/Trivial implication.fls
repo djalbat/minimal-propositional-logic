@@ -2,11 +2,11 @@ Metavariable P:Statement
 
 Rule (TrivialImplication)
   Conclusion
-    P => P
+    P ⇒ P
   Proof
     Premise
       P
     Then
       P
   Therefore
-    P => P by ImplicationIntroduction
+    P ⇒ P by ImplicationIntroduction
