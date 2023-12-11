@@ -1,4 +1,4 @@
-# Minimal Propositional Logic...
+# Minimal Propositional Logic
 
 Minimal propositional logic for [Occam](https://occam.science).
 
