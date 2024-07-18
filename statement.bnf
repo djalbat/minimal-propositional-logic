@@ -1,0 +1,9 @@
+
+
+             statement  ::=   "¬"<NO_WHITESPACE>metaArgument
+
+                          |   metaArgument ( "∧" | "∨" | "iff" | "⇒" | "⇔" ) metaArgument
+
+                          ;
+
+
