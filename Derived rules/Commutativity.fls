@@ -26,9 +26,9 @@ Rule (ConjunctionCommutes)
   Conclusion
     Q ∧ P
   Proof
-    Q by ConjunctionLeftElimination
-    P ∧ Q
     P by ConjunctionRightElimination
-    Q
+    P ∧ Q
+    Q by ConjunctionLeftElimination
+    P
   Therefore
     Q ∧ P by ConjunctionIntroduction

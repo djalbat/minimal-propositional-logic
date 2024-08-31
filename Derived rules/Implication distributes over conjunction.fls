@@ -42,9 +42,25 @@ Rule (ConjunctionIntroductionWithImplication)
     Premise
       P
     Hence
-      Q by ModusPonens
       R by ModusPonens
+      P ⇒ Q
+      Q by ModusPonens
+      R
     Then
       Q ∧ R by ConjunctionIntroduction
   Therefore
     P ⇒ (Q ∧ R) by ImplicationIntroduction
+
+
+
+
+
+
+
+
+
+
+
+
+
+

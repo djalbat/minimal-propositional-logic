@@ -19,7 +19,3 @@ Rule (BiconditionalRightElimination)
     P iff Q
   Conclusion
     Q ⇒ P
-
-Rule (BiconditionalEquivalence)
-  Conclusion
-    (P iff Q) iff (P ⇔ Q)

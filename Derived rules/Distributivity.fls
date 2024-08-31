@@ -16,6 +16,9 @@ Rule (ConjunctionDistributesOverDisjunction)
     Q ⇒ (P ∧ Q) by ImplicationIntroduction
     Premise
       R
+    Hence
+      P
+      R
     Then
       P ∧ R by ConjunctionIntroduction
     R ⇒ (P ∧ R) by ImplicationIntroduction
@@ -56,6 +59,7 @@ Rule (ConjuctionDistributedOverDisjunction)
       Q ∨ R by DisjunctionLeftIntroduction
     (P ∧ R) ⇒ (Q ∨ R) by ImplicationIntroduction
     (P ∧ Q) ∨ (P ∧ R)
+    P
     Q ∨ R by DisjunctionElimination
   Therefore
     P ∧ (Q ∨ R) by ConjunctionIntroduction
@@ -69,18 +73,21 @@ Rule (DisjunctionDistributesOverConjunction)
     Premise
       P
     Hence
-      P ∨ Q by DisjunctionRightIntroduction
       P ∨ R by DisjunctionRightIntroduction
+      P
+      P ∨ Q by DisjunctionRightIntroduction
+      P ∨ R
     Then
       (P ∨ Q) ∧ (P ∨ R) by ConjunctionIntroduction
     P ⇒ ((P ∨ Q) ∧ (P ∨ R)) by ImplicationIntroduction
     Premise
       Q ∧ R
     Hence
-      Q by ConjunctionRightElimination
-      P ∨ Q by DisjunctionLeftIntroduction
       R by ConjunctionLeftElimination
       P ∨ R by DisjunctionLeftIntroduction
+      Q by ConjunctionRightElimination
+      P ∨ Q by DisjunctionLeftIntroduction
+      P ∨ R
     Then
       (P ∨ Q) ∧ (P ∨ R) by ConjunctionIntroduction
     (Q ∧ R) ⇒ ((P ∨ Q) ∧ (P ∨ R)) by ImplicationIntroduction

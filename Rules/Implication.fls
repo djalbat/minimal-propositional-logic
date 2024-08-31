@@ -9,7 +9,7 @@ Rule (ImplicationIntroduction,ConditionalProof)
 
 Rule (ModusPonens,ImplicationElimination,RuleOfDetachment)
   Premises
-    P ⇒ Q
     P 
+    P ⇒ Q
   Conclusion
     Q
