@@ -7,12 +7,12 @@ Rule (DisjunctionCommutes)
   Conclusion
     Q ∨ P
   Proof
-    Premise
+    Suppose
       P
     Then
       Q ∨ P by DisjunctionLeftIntroduction
     P ⇒ (Q ∨ P) by ImplicationIntroduction
-    Premise
+    Suppose
       Q
     Then
       Q ∨ P by DisjunctionRightIntroduction

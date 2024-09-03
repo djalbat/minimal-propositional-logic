@@ -6,7 +6,7 @@ Rule (DoubleNegationIntroduction)
   Conclusion
     ¬¬P
   Proof
-    Premise
+    Suppose
       ¬P
     Hence
       P

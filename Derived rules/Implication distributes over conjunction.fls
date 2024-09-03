@@ -8,7 +8,7 @@ Rule (ConjunctionRightEliminationWithImplication)
   Conclusion
     P ⇒ Q
   Proof
-    Premise
+    Suppose
       P
     Hence
       Q ∧ R by ModusPonens
@@ -23,7 +23,7 @@ Rule (ConjunctionLeftEliminationWithImplication)
   Conclusion
     P ⇒ R
   Proof
-    Premise
+    Suppose
       P
     Hence
       Q ∧ R by ModusPonens
@@ -39,7 +39,7 @@ Rule (ConjunctionIntroductionWithImplication)
   Conclusion
     P ⇒ (Q ∧ R)
   Proof
-    Premise
+    Suppose
       P
     Hence
       R by ModusPonens

@@ -11,10 +11,10 @@ Rule (DestructiveDilemma)
   Conclusion
     ¬P ∨ ¬Q
   Proof
-    Premise
+    Suppose
       P ⇒ R
     Hence
-      Premise
+      Suppose
         ¬R
       Hence
         ¬P by ModusTollens
@@ -24,10 +24,10 @@ Rule (DestructiveDilemma)
       ¬R ⇒ (¬P ∨ ¬Q) by ImplicationIntroduction
     (P ⇒ R) ⇒ (¬R ⇒ (¬P ∨ ¬Q)) by ImplicationIntroduction
     ¬R ⇒ (¬P ∨ ¬Q) by ModusPonens
-    Premise
+    Suppose
       Q ⇒ S
     Hence
-      Premise
+      Suppose
         ¬S
       Hence
         ¬Q by ModusTollens

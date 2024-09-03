@@ -11,7 +11,7 @@ Rule (ConstructiveDilemma)
   Conclusion
     R ∨ S
   Proof
-    Premise
+    Suppose
       P
     Hence
       P ⇒ R
@@ -19,7 +19,7 @@ Rule (ConstructiveDilemma)
     Then
       R ∨ S by DisjunctionRightIntroduction
     P ⇒ (R ∨ S) by ImplicationIntroduction
-    Premise
+    Suppose
       Q
     Hence
       Q ⇒ S

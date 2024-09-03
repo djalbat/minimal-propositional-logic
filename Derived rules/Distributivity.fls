@@ -9,12 +9,12 @@ Rule (ConjunctionDistributesOverDisjunction)
     (P ∧ Q) ∨ (P ∧ R)
   Proof
     P by ConjunctionRightElimination
-    Premise
+    Suppose
       Q
     Then
       P ∧ Q by ConjunctionIntroduction
     Q ⇒ (P ∧ Q) by ImplicationIntroduction
-    Premise
+    Suppose
       R
     Hence
       P
@@ -32,26 +32,26 @@ Rule (ConjuctionDistributedOverDisjunction)
   Conclusion
     P ∧ (Q ∨ R)
   Proof
-    Premise
+    Suppose
       P ∧ Q
     Then
       P by ConjunctionRightElimination
     (P ∧ Q) ⇒ P by ImplicationIntroduction
-    Premise
+    Suppose
       P ∧ R
     Then
       P by ConjunctionRightElimination
     (P ∧ Q) ⇒ P
     (P ∧ R) ⇒ P by ImplicationIntroduction
     P by DisjunctionElimination
-    Premise
+    Suppose
       P ∧ Q
     Hence
       Q by ConjunctionLeftElimination
     Then
       Q ∨ R by DisjunctionRightIntroduction
     (P ∧ Q) ⇒ (Q ∨ R) by ImplicationIntroduction
-    Premise
+    Suppose
       P ∧ R
     Hence
       R by ConjunctionLeftElimination
@@ -70,7 +70,7 @@ Rule (DisjunctionDistributesOverConjunction)
   Conclusion
     (P ∨ Q) ∧ (P ∨ R)
   Proof
-    Premise
+    Suppose
       P
     Hence
       P ∨ R by DisjunctionRightIntroduction
@@ -80,7 +80,7 @@ Rule (DisjunctionDistributesOverConjunction)
     Then
       (P ∨ Q) ∧ (P ∨ R) by ConjunctionIntroduction
     P ⇒ ((P ∨ Q) ∧ (P ∨ R)) by ImplicationIntroduction
-    Premise
+    Suppose
       Q ∧ R
     Hence
       R by ConjunctionLeftElimination
@@ -102,20 +102,20 @@ Rule (DisjunctionDistributedOverConjunction)
   Conclusion
     P ∨ (Q ∧ R)
   Proof
-    Premise
+    Suppose
       P
     Then
       P ∨ (Q ∧ R) by DisjunctionRightIntroduction
     P ⇒ (P ∨ (Q ∧ R)) by ImplicationIntroduction
-    Premise
+    Suppose
       R
     Hence
-      Premise
+      Suppose
         P
       Then
         P ∨ (Q ∧ R) by DisjunctionRightIntroduction
       P ⇒ (P ∨ (Q ∧ R)) by ImplicationIntroduction
-      Premise
+      Suppose
         Q
       Hence
         R

@@ -4,7 +4,7 @@ Rule (TrivialImplication)
   Conclusion
     P ⇒ P
   Proof
-    Premise
+    Suppose
       P
     Then
       P

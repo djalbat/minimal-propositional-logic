@@ -8,7 +8,7 @@ Rule (ModusTollens)
   Conclusion
     ¬P
   Proof
-    Premise
+    Suppose
       P
     Then
       ¬Q
