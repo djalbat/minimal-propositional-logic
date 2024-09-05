@@ -1,7 +1,0 @@
-
-
-         metastatement  ::=   "¬"<NO_WHITESPACE>metastatement
-    
-                          |   metastatement ( "∧" | "∨" | "iff" | "⇒" | "⇔" ) metastatement
-     
-                          ;   
