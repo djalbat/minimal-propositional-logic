@@ -10,6 +10,7 @@ Rule (DoubleNegationIntroduction)
       ¬P
     Hence
       P
+      ¬P
     Then
       P ∧ ¬P by ConjunctionIntroduction
     ¬P ⇒ (P ∧ ¬P) by ImplicationIntroduction
