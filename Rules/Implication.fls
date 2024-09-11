@@ -1,15 +1,15 @@
-Metavariable P:Statement
-Metavariable Q:Statement
+Metavariable R:Statement
+Metavariable S:Statement
 
 Rule (ImplicationIntroduction,ConditionalProof)
   Premise
-    [P]...Q
+    [R]...S
   Conclusion
-    P ⇒ Q
+    R ⇒ S
 
 Rule (ModusPonens,ImplicationElimination,RuleOfDetachment)
   Premises
-    P 
-    P ⇒ Q
+    R 
+    R ⇒ S
   Conclusion
-    Q
+    S
