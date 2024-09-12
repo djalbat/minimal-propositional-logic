@@ -1,15 +1,12 @@
 Metavariable P:Statement
 Metavariable Q:Statement
 
-Metavariable R:Statement
-Metavariable S:Statement
-
 Rule (ConjunctionIntroduction)
   Premises
-    R
-    S
+    P
+    Q
   Conclusion
-    R ∧ S
+    P ∧ Q
 
 Rule (ConjunctionLeftElimination)
   Premise
