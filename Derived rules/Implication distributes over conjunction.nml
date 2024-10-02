@@ -50,17 +50,3 @@ Rule (ConjunctionIntroductionWithImplication)
       Q ∧ R by ConjunctionIntroduction
   Therefore
     P ⇒ (Q ∧ R) by ImplicationIntroduction
-
-
-
-
-
-
-
-
-
-
-
-
-
-
