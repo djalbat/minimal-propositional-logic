@@ -1,12 +1,12 @@
-Metavariable P:Statement
+Metavariable R:Statement
 
 Rule (TrivialImplication)
   Conclusion
-    P ⇒ P
+    R ⇒ R
   Proof
     Suppose
-      P
+      R
     Then
-      P
+      R
   Therefore
-    P ⇒ P by ImplicationIntroduction
+    R ⇒ R by ImplicationIntroduction
