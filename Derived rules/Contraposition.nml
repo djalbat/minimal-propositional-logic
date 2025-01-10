@@ -17,7 +17,7 @@ Rule (Contrapositive)
   Therefore
     ¬Q ⇒ ¬P by ConditionalProof
 
-Rule (ContrapostiiveEquivalence)
+Rule (ContrapositiveEquivalence)
   Premise
     P iff Q
   Conclusion
