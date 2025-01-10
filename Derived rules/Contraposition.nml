@@ -1,0 +1,31 @@
+Metavariable P:Statement
+Metavariable Q:Statement
+
+Rule (Contrapositive)
+  Premise
+    P ⇒ Q
+  Conclusion
+   ¬Q ⇒ ¬P
+  Proof
+   Suppose
+     ¬Q
+   Hence
+     P ⇒ Q
+   Then
+     ¬P by ModusTollens
+    ¬Q ⇒ ¬P by ConditionalProof
+  Therefore
+    ¬Q ⇒ ¬P by ConditionalProof
+
+Rule (ContrapostiiveEquivalence)
+  Premise
+    P iff Q
+  Conclusion
+    ¬P iff ¬Q
+  Proof
+    P ⇒ Q by BiconditionalLeftElimination
+    ¬Q ⇒ ¬P by Contrapositive
+    Q ⇒ P by BiconditionalRightElimination
+    ¬P ⇒ ¬Q by Contrapositive
+  Therefore
+    ¬P iff ¬Q by BiconditionalIntroduction
