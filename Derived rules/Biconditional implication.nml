@@ -1,7 +1,7 @@
 Metavariable P:Statement
 Metavariable Q:Statement
 
-Rule (BiconditionalImplicationLeftElimination)
+Rule (BiconditionalImplicationRightElimination)
   Premises
     P iff Q
     Q
@@ -12,7 +12,7 @@ Rule (BiconditionalImplicationLeftElimination)
   Therefore
     P by ModusPonens
 
-Rule (BiconditionalImplicationRightElimination)
+Rule (BiconditionalImplicationLeftElimination)
   Premises
     P iff Q
     P
