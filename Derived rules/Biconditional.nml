@@ -1,0 +1,35 @@
+Metavariable P:Statement
+Metavariable Q:Statement
+Metavariable R:Statement
+
+Rule (TransitiveBiconditional)
+  Premises
+    P iff Q
+    P iff R
+  Conclusion
+    Q iff R
+  Proof
+    Suppose
+      Q
+    Hence
+      P iff Q
+      Q
+      P by BiconditionalImplicationRightElimination
+      P iff R
+      P
+    Then
+      R by BiconditionalImplicationLeftElimination
+    Q ⇒ R by ConditionalProof
+    Suppose
+      R
+    Hence
+      P iff R
+      R
+      P by BiconditionalImplicationRightElimination
+      P iff Q
+      P
+    Then
+      Q by BiconditionalImplicationLeftElimination
+    R ⇒ Q by ConditionalProof
+  Therefore
+    Q iff R by BiconditionalIntroduction

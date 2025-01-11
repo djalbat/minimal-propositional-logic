@@ -1,0 +1,23 @@
+Metavariable P:Statement
+Metavariable Q:Statement
+Metavariable R:Statement
+
+Rule (TransitiveImplication)
+  Premises
+    P ⇒ Q
+    Q ⇒ R
+  Conclusion
+    P ⇒ R
+  Proof
+    Suppose
+      P
+    Hence
+      P ⇒ Q
+      P
+      Q by ModusPonens
+      Q ⇒ R
+      Q
+    Then
+      R by ModusPonens
+  Therefore
+    P ⇒ R by ConditionalProof
