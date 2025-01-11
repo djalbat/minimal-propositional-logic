@@ -1,7 +1,7 @@
 Metavariable P:Statement
 Metavariable Q:Statement
 
-Rule (Contrapositive)
+Rule (Contrapositive,ImplicationContrapositive)
   Premise
     P ⇒ Q
   Conclusion
@@ -17,7 +17,7 @@ Rule (Contrapositive)
   Therefore
     ¬Q ⇒ ¬P by ConditionalProof
 
-Rule (ContrapositiveEquivalence)
+Rule (ContrapositiveEquivalence,BiconditionalContrapositive)
   Premise
     P iff Q
   Conclusion
