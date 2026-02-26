@@ -1,6 +1,9 @@
 Combinator ¬Statement
 
+Combinator Statement ⇐ Statement
+Combinator Statement ⇒ Statement
+
 Combinator Statement ∧ Statement
 Combinator Statement ∨ Statement
-Combinator Statement ⇒ Statement
-Combinator Statement iff Statement
+
+Combinator Statement 𝗂𝖿𝖿 Statement

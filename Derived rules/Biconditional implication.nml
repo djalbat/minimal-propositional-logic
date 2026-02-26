@@ -3,7 +3,7 @@ Metavariable Q:Statement
 
 Rule (BiconditionalImplicationRightElimination)
   Premises
-    P iff Q
+    P 𝗂𝖿𝖿 Q
     Q
   Conclusion
     P
@@ -14,7 +14,7 @@ Rule (BiconditionalImplicationRightElimination)
 
 Rule (BiconditionalImplicationLeftElimination)
   Premises
-    P iff Q
+    P 𝗂𝖿𝖿 Q
     P
   Conclusion
     Q

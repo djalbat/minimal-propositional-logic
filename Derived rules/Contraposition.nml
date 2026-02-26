@@ -19,13 +19,13 @@ Rule (Contrapositive,ImplicationContrapositive)
 
 Rule (ContrapositiveEquivalence,BiconditionalContrapositive)
   Premise
-    P iff Q
+    P 𝗂𝖿𝖿 Q
   Conclusion
-    ¬P iff ¬Q
+    ¬P 𝗂𝖿𝖿 ¬Q
   Proof
     P ⇒ Q by BiconditionalLeftElimination
     ¬Q ⇒ ¬P by Contrapositive
     Q ⇒ P by BiconditionalRightElimination
     ¬P ⇒ ¬Q by Contrapositive
   Therefore
-    ¬P iff ¬Q by BiconditionalIntroduction
+    ¬P 𝗂𝖿𝖿 ¬Q by BiconditionalIntroduction

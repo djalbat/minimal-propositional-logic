@@ -4,18 +4,18 @@ Metavariable R:Statement
 
 Rule (TransitiveBiconditional)
   Premises
-    P iff Q
-    P iff R
+    P 𝗂𝖿𝖿 Q
+    P 𝗂𝖿𝖿 R
   Conclusion
-    Q iff R
+    Q 𝗂𝖿𝖿 R
   Proof
     Suppose
       Q
     Hence
-      P iff Q
+      P 𝗂𝖿𝖿 Q
       Q
       P by BiconditionalImplicationRightElimination
-      P iff R
+      P 𝗂𝖿𝖿 R
       P
     Then
       R by BiconditionalImplicationLeftElimination
@@ -23,13 +23,13 @@ Rule (TransitiveBiconditional)
     Suppose
       R
     Hence
-      P iff R
+      P 𝗂𝖿𝖿 R
       R
       P by BiconditionalImplicationRightElimination
-      P iff Q
+      P 𝗂𝖿𝖿 Q
       P
     Then
       Q by BiconditionalImplicationLeftElimination
     R ⇒ Q by ConditionalProof
   Therefore
-    Q iff R by BiconditionalIntroduction
+    Q 𝗂𝖿𝖿 R by BiconditionalIntroduction

@@ -6,16 +6,16 @@ Rule (BiconditionalIntroduction)
     P ⇒ Q
     Q ⇒ P
   Conclusion
-    P iff Q
+    P 𝗂𝖿𝖿 Q
 
 Rule (BiconditionalLeftElimination)
   Premise
-    P iff Q
+    P 𝗂𝖿𝖿 Q
   Conclusion
     P ⇒ Q
 
 Rule (BiconditionalRightElimination)
   Premise
-    P iff Q
+    P 𝗂𝖿𝖿 Q
   Conclusion
     Q ⇒ P
