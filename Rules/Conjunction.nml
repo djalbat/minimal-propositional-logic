@@ -8,13 +8,13 @@ Rule (ConjunctionIntroduction)
   Conclusion
     P ∧ Q
 
-Rule (ConjunctionLeftElimination)
+Rule (ConjunctionRightElimination)
   Premise
     P ∧ Q
   Conclusion
     Q
 
-Rule (ConjunctionRightElimination)
+Rule (ConjunctionLeftElimination)
   Premise
     P ∧ Q
   Conclusion

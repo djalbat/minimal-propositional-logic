@@ -1,24 +1,24 @@
 Metavariable P:Statement
 Metavariable Q:Statement
 
-Rule (BiconditionalImplicationRightElimination)
-  Premises
-    P 𝗂𝖿𝖿 Q
-    Q
-  Conclusion
-    P
-  Proof
-    Q ⇒ P by BiconditionalRightElimination
-  Therefore
-    P by ModusPonens
-
 Rule (BiconditionalImplicationLeftElimination)
   Premises
     P 𝗂𝖿𝖿 Q
+    Q
+  Conclusion
+    P
+  Proof
+    Q ⇒ P by BiconditionalLeftElimination
+  Therefore
+    P by ModusPonens
+
+Rule (BiconditionalImplicationRightElimination)
+  Premises
+    P 𝗂𝖿𝖿 Q
     P
   Conclusion
     Q
   Proof
-    P ⇒ Q by BiconditionalLeftElimination
+    P ⇒ Q by BiconditionalRightElimination
   Therefore
     Q by ModusPonens

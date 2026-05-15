@@ -7,7 +7,7 @@ Rule (NegationIntroductionAlternativeForm)
   Conclusion
     ¬P
   Proof
-    P ⇒ Q by ConjunctionRightEliminationWithImplication
-    P ⇒ ¬Q by ConjunctionLeftEliminationWithImplication
+    P ⇒ Q by ConjunctionLeftEliminationWithImplication
+    P ⇒ ¬Q by ConjunctionRightEliminationWithImplication
   Therefore
     ¬P by NegationIntroduction

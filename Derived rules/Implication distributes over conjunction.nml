@@ -2,7 +2,7 @@ Metavariable P:Statement
 Metavariable Q:Statement
 Metavariable R:Statement
 
-Rule (ConjunctionRightEliminationWithImplication)
+Rule (ConjunctionLeftEliminationWithImplication)
   Premise
     P ⇒ (Q ∧ R)
   Conclusion
@@ -13,11 +13,11 @@ Rule (ConjunctionRightEliminationWithImplication)
     Hence
       Q ∧ R by ModusPonens
     Then
-      Q by ConjunctionRightElimination
+      Q by ConjunctionLeftElimination
   Therefore
     P ⇒ Q by ImplicationIntroduction
 
-Rule (ConjunctionLeftEliminationWithImplication)
+Rule (ConjunctionRightEliminationWithImplication)
   Premise
     P ⇒ (Q ∧ R)
   Conclusion
@@ -28,7 +28,7 @@ Rule (ConjunctionLeftEliminationWithImplication)
     Hence
       Q ∧ R by ModusPonens
     Then
-      R by ConjunctionLeftElimination
+      R by ConjunctionRightElimination
   Therefore
     P ⇒ R by ImplicationIntroduction
 

@@ -23,9 +23,9 @@ Rule (ContrapositiveEquivalence,BiconditionalContrapositive)
   Conclusion
     ¬P 𝗂𝖿𝖿 ¬Q
   Proof
-    P ⇒ Q by BiconditionalLeftElimination
+    P ⇒ Q by BiconditionalRightElimination
     ¬Q ⇒ ¬P by Contrapositive
-    Q ⇒ P by BiconditionalRightElimination
+    Q ⇒ P by BiconditionalLeftElimination
     ¬P ⇒ ¬Q by Contrapositive
   Therefore
     ¬P 𝗂𝖿𝖿 ¬Q by BiconditionalIntroduction

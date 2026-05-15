@@ -19,7 +19,7 @@ Rule (DestructiveDilemma)
       Hence
         ¬P by ModusTollens
       Then
-        ¬P ∨ ¬Q by DisjunctionRightIntroduction
+        ¬P ∨ ¬Q by DisjunctionLeftIntroduction
     Then
       ¬R ⇒ (¬P ∨ ¬Q) by ImplicationIntroduction
     (P ⇒ R) ⇒ (¬R ⇒ (¬P ∨ ¬Q)) by ImplicationIntroduction
@@ -32,7 +32,7 @@ Rule (DestructiveDilemma)
       Hence
         ¬Q by ModusTollens
       Then
-        ¬P ∨ ¬Q by DisjunctionLeftIntroduction
+        ¬P ∨ ¬Q by DisjunctionRightIntroduction
     Then
       ¬S ⇒ (¬P ∨ ¬Q) by ImplicationIntroduction
     (Q ⇒ S) ⇒ (¬S ⇒ (¬P ∨ ¬Q)) by ImplicationIntroduction

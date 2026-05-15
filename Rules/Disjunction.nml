@@ -2,13 +2,13 @@ Metavariable P:Statement
 Metavariable Q:Statement
 Metavariable R:Statement
 
-Rule (DisjunctionRightIntroduction,RightAddtion)
+Rule (DisjunctionLeftIntroduction,RightAddtion)
   Premise
     P
   Conclusion
     P ∨ Q
 
-Rule (DisjunctionLeftIntroduction,LeftAddition)
+Rule (DisjunctionRightIntroduction,LeftAddition)
   Premise
     Q
   Conclusion

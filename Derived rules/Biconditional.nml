@@ -14,22 +14,22 @@ Rule (TransitiveBiconditional)
     Hence
       P 𝗂𝖿𝖿 Q
       Q
-      P by BiconditionalImplicationRightElimination
+      P by BiconditionalImplicationLeftElimination
       P 𝗂𝖿𝖿 R
       P
     Then
-      R by BiconditionalImplicationLeftElimination
+      R by BiconditionalImplicationRightElimination
     Q ⇒ R by ConditionalProof
     Suppose
       R
     Hence
       P 𝗂𝖿𝖿 R
       R
-      P by BiconditionalImplicationRightElimination
+      P by BiconditionalImplicationLeftElimination
       P 𝗂𝖿𝖿 Q
       P
     Then
-      Q by BiconditionalImplicationLeftElimination
+      Q by BiconditionalImplicationRightElimination
     R ⇒ Q by ConditionalProof
   Therefore
     Q 𝗂𝖿𝖿 R by BiconditionalIntroduction

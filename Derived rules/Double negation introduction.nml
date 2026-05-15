@@ -14,7 +14,7 @@ Rule (DoubleNegationIntroduction)
     Then
       P ∧ ¬P by ConjunctionIntroduction
     ¬P ⇒ (P ∧ ¬P) by ImplicationIntroduction
-    ¬P ⇒ P by ConjunctionRightEliminationWithImplication
-    ¬P ⇒ ¬P by ConjunctionLeftEliminationWithImplication
+    ¬P ⇒ P by ConjunctionLeftEliminationWithImplication
+    ¬P ⇒ ¬P by ConjunctionRightEliminationWithImplication
   Therefore
     ¬¬P by NegationIntroduction

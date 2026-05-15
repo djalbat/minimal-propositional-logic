@@ -23,21 +23,21 @@ Minimal propositional logic for [Occam](https://occam.science).
 \]
 
 \[
-\frac{P\land{Q}}{P}\quad\small\text{[ConjunctionLeftElimination]}
+\frac{P\land{Q}}{P}\quad\small\text{[ConjunctionRightElimination]}
 \]
 
 \[
-\frac{P\land{Q}}{Q}\quad\small\text{[ConjunctionRightElimination]}
+\frac{P\land{Q}}{Q}\quad\small\text{[ConjunctionLeftElimination]}
 \]
 
 &nbsp;
 
 \[
-\frac{P}{P\lor{Q}}\quad\small\text{[DisjunctionLeftIntroduction,LeftAddition]}
+\frac{P}{P\lor{Q}}\quad\small\text{[DisjunctionRightIntroduction,LeftAddition]}
 \]
 
 \[
-\frac{Q}{P\lor{Q}}\quad\small\text{[DisjunctionRightIntroduction,RightAddition]}
+\frac{Q}{P\lor{Q}}\quad\small\text{[DisjunctionLeftIntroduction,RightAddition]}
 \]
 
 \[
@@ -51,11 +51,11 @@ Minimal propositional logic for [Occam](https://occam.science).
 \]
 
 \[
-\frac{P\iff{Q}}{P\Rightarrow{Q}}\quad\small\text{[BiconditionalLeftElimination]}
+\frac{P\iff{Q}}{P\Rightarrow{Q}}\quad\small\text{[BiconditionalRightElimination]}
 \]
 
 \[
-\frac{P\iff{Q}}{Q\Rightarrow{P}}\quad\small\text{[BiconditionalRightElimination]}
+\frac{P\iff{Q}}{Q\Rightarrow{P}}\quad\small\text{[BiconditionalLeftElimination]}
 \]
 
 As well as these rules there are many derived rules. See the package contents for details.

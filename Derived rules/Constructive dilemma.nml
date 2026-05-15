@@ -17,7 +17,7 @@ Rule (ConstructiveDilemma)
       P ⇒ R
       R by ModusPonens
     Then
-      R ∨ S by DisjunctionRightIntroduction
+      R ∨ S by DisjunctionLeftIntroduction
     P ⇒ (R ∨ S) by ImplicationIntroduction
     Suppose
       Q
@@ -25,7 +25,7 @@ Rule (ConstructiveDilemma)
       Q ⇒ S
       S by ModusPonens
     Then
-      R ∨ S by DisjunctionLeftIntroduction
+      R ∨ S by DisjunctionRightIntroduction
     Q ⇒ (R ∨ S) by ImplicationIntroduction
   Therefore
     R ∨ S by DisjunctionElimination

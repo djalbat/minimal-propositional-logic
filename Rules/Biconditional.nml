@@ -8,13 +8,13 @@ Rule (BiconditionalIntroduction)
   Conclusion
     P 𝗂𝖿𝖿 Q
 
-Rule (BiconditionalLeftElimination)
+Rule (BiconditionalRightElimination)
   Premise
     P 𝗂𝖿𝖿 Q
   Conclusion
     P ⇒ Q
 
-Rule (BiconditionalRightElimination)
+Rule (BiconditionalLeftElimination)
   Premise
     P 𝗂𝖿𝖿 Q
   Conclusion

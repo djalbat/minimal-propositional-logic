@@ -10,12 +10,12 @@ Rule (DisjunctionCommutes)
     Suppose
       P
     Then
-      Q ∨ P by DisjunctionLeftIntroduction
+      Q ∨ P by DisjunctionRightIntroduction
     P ⇒ (Q ∨ P) by ImplicationIntroduction
     Suppose
       Q
     Then
-      Q ∨ P by DisjunctionRightIntroduction
+      Q ∨ P by DisjunctionLeftIntroduction
     Q ⇒ (Q ∨ P) by ImplicationIntroduction
   Therefore
     Q ∨ P by DisjunctionElimination
@@ -26,9 +26,9 @@ Rule (ConjunctionCommutes)
   Conclusion
     Q ∧ P
   Proof
-    P by ConjunctionRightElimination
+    P by ConjunctionLeftElimination
     P ∧ Q
-    Q by ConjunctionLeftElimination
+    Q by ConjunctionRightElimination
     P
   Therefore
     Q ∧ P by ConjunctionIntroduction

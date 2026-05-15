@@ -8,7 +8,7 @@ Rule (ConjunctionDistributesOverDisjunction)
   Conclusion
     (P ∧ Q) ∨ (P ∧ R)
   Proof
-    P by ConjunctionRightElimination
+    P by ConjunctionLeftElimination
     Suppose
       Q
     Then
@@ -22,7 +22,7 @@ Rule (ConjunctionDistributesOverDisjunction)
     Then
       P ∧ R by ConjunctionIntroduction
     R ⇒ (P ∧ R) by ImplicationIntroduction
-    Q ∨ R by ConjunctionLeftElimination
+    Q ∨ R by ConjunctionRightElimination
   Therefore
     (P ∧ Q) ∨ (P ∧ R) by ConstructiveDilemma
 
@@ -35,28 +35,28 @@ Rule (ConjuctionDistributedOverDisjunction)
     Suppose
       P ∧ Q
     Then
-      P by ConjunctionRightElimination
-    (P ∧ Q) ⇒ P by ImplicationIntroduction
+      P by ConjunctionLeftElimination    
+      (P ∧ Q) ⇒ P by ImplicationIntroduction
     Suppose
       P ∧ R
     Then
-      P by ConjunctionRightElimination
+      P by ConjunctionLeftElimination
     (P ∧ Q) ⇒ P
     (P ∧ R) ⇒ P by ImplicationIntroduction
     P by DisjunctionElimination
     Suppose
       P ∧ Q
     Hence
-      Q by ConjunctionLeftElimination
+      Q by ConjunctionRightElimination
     Then
-      Q ∨ R by DisjunctionRightIntroduction
+      Q ∨ R by DisjunctionLeftIntroduction
     (P ∧ Q) ⇒ (Q ∨ R) by ImplicationIntroduction
     Suppose
       P ∧ R
     Hence
-      R by ConjunctionLeftElimination
+      R by ConjunctionRightElimination
     Then
-      Q ∨ R by DisjunctionLeftIntroduction
+      Q ∨ R by DisjunctionRightIntroduction
     (P ∧ R) ⇒ (Q ∨ R) by ImplicationIntroduction
     (P ∧ Q) ∨ (P ∧ R)
     P
@@ -73,9 +73,9 @@ Rule (DisjunctionDistributesOverConjunction)
     Suppose
       P
     Hence
-      P ∨ R by DisjunctionRightIntroduction
+      P ∨ R by DisjunctionLeftIntroduction
       P
-      P ∨ Q by DisjunctionRightIntroduction
+      P ∨ Q by DisjunctionLeftIntroduction
       P ∨ R
     Then
       (P ∨ Q) ∧ (P ∨ R) by ConjunctionIntroduction
@@ -83,10 +83,10 @@ Rule (DisjunctionDistributesOverConjunction)
     Suppose
       Q ∧ R
     Hence
-      R by ConjunctionLeftElimination
-      P ∨ R by DisjunctionLeftIntroduction
-      Q by ConjunctionRightElimination
-      P ∨ Q by DisjunctionLeftIntroduction
+      R by ConjunctionRightElimination
+      P ∨ R by DisjunctionRightIntroduction
+      Q by ConjunctionLeftElimination
+      P ∨ Q by DisjunctionRightIntroduction
       P ∨ R
     Then
       (P ∨ Q) ∧ (P ∨ R) by ConjunctionIntroduction
@@ -105,7 +105,7 @@ Rule (DisjunctionDistributedOverConjunction)
     Suppose
       P
     Then
-      P ∨ (Q ∧ R) by DisjunctionRightIntroduction
+      P ∨ (Q ∧ R) by DisjunctionLeftIntroduction
     P ⇒ (P ∨ (Q ∧ R)) by ImplicationIntroduction
     Suppose
       R
@@ -113,7 +113,7 @@ Rule (DisjunctionDistributedOverConjunction)
       Suppose
         P
       Then
-        P ∨ (Q ∧ R) by DisjunctionRightIntroduction
+        P ∨ (Q ∧ R) by DisjunctionLeftIntroduction
       P ⇒ (P ∨ (Q ∧ R)) by ImplicationIntroduction
       Suppose
         Q
@@ -121,9 +121,9 @@ Rule (DisjunctionDistributedOverConjunction)
         R
         Q ∧ R by ConjunctionIntroduction
       Then
-        P ∨ (Q ∧ R) by DisjunctionLeftIntroduction
+        P ∨ (Q ∧ R) by DisjunctionRightIntroduction
       Q ⇒ (P ∨ (Q ∧ R)) by ImplicationIntroduction
-      P ∨ Q by ConjunctionRightElimination
+      P ∨ Q by ConjunctionLeftElimination
       P ⇒ (P ∨ (Q ∧ R))
       Q ⇒ (P ∨ (Q ∧ R))
     Then
@@ -131,6 +131,6 @@ Rule (DisjunctionDistributedOverConjunction)
     R ⇒ (P ∨ (Q ∧ R)) by ImplicationIntroduction
     P ⇒ (P ∨ (Q ∧ R))
     (P ∨ Q) ∧ (P ∨ R)
-    P ∨ R by ConjunctionLeftElimination
+    P ∨ R by ConjunctionRightElimination
   Therefore
     P ∨ (Q ∧ R) by DisjunctionElimination
