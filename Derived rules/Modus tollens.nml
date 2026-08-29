@@ -3,8 +3,8 @@ Metavariable Q:Statement
 
 Rule (ModusTollens)
   Premises
-    P ⇒ Q 
     ¬Q
+    P ⇒ Q 
   Conclusion
     ¬P
   Proof

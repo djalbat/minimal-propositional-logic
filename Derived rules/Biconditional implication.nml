@@ -3,8 +3,8 @@ Metavariable Q:Statement
 
 Rule (BiconditionalImplicationLeftElimination)
   Premises
-    P 𝗂𝖿𝖿 Q
     Q
+    P 𝗂𝖿𝖿 Q
   Conclusion
     P
   Proof
