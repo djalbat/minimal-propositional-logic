@@ -1,0 +1,9 @@
+Metavariable P:Statement
+
+Rule (TrivialDisjunctionElimiation)
+  Premise
+    P ∧ P
+  Conclusion
+    P
+  Proof
+    P by ConjunctionLeftElimination

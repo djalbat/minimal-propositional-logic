@@ -1,0 +1,43 @@
+Metavariable P:Statement
+
+Rule (Idempotence)
+  Premise 
+    P
+  Conclusion 
+    P ∨ P
+  Proof
+    P ∨ P by DisjunctionLeftIntroduction
+
+Rule (NegatedDikjunctionIdempotence)
+  Premise 
+    ¬P
+  Conclusion 
+    ¬(P ∨ P)
+  Proof
+    Suppose
+      P ∨ P
+    Then
+      P by TrivialDisjunctionElimiation
+    Suppose
+      P ∨ P
+    Then
+      ¬P
+  Therefore 
+    ¬(P ∨ P) by NegationIntroduction
+
+Rule (NegatedConjunctionIdempotence)
+  Premise 
+    ¬P
+  Conclusion 
+    ¬(P ∧ P)
+  Proof
+    Suppose
+      P ∧ P
+    Then
+      P by TrivialConjunctionElimiation
+    Suppose
+      P ∧ P
+    Then
+      ¬P
+  Therefore 
+    ¬(P ∧ P) by NegationIntroduction
